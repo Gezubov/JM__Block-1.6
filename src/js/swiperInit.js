@@ -1,3 +1,4 @@
+import Swiper from './index.js'
 let swiper= Swiper;
 let init = false;
 
