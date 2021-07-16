@@ -1,20 +1,21 @@
-@import "nullstyle.scss";
+$bgColor_1: #ffffff;
+$bgColor_2: #f8f8f8;
+$LakesRegular: "TTLakes-Regular", sans-serif;
+$LakesMedium: "TTLakes-Medium", sans-serif;
+$LakesBold: "TTLakes-Bold", sans-serif;
 
-.block {
-  padding: 30px;
-  font-size: 50px;
-  line-height: 60px;
-  .block__text {
-    font-size: 80px;
-    span {
-      color: green;
-    }
-  }
+@mixin fontz($f) {
+  font-size: $f;
 }
-.link {
-  color: blue;
-  text-decoration: underline;
-  &:hover {
-    color: green;
-  }
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url(../fonts/TTLakes-Regular.woff2);
+}
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url(../fonts/TTLakes-Medium.woff2);
+}
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url(../fonts/TTLakes-Bold.woff2);
 }
