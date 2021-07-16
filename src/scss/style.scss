@@ -23,13 +23,14 @@ body {
   background-color: $bgColor_1;
 }
 
-//////////headeer///////////
+//////////header///////////
 
 .header {
   background-color: $bgColor_2;
   min-height: 88px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #d9fff5;
 }
 .header-left-side {
   display: flex;
@@ -70,7 +71,7 @@ body {
   display: none;
 }
 .title__text {
-  margin-left: 20px;
+  margin-left: 16px;
   color: #1b1c21;
   font-family: $LakesBold;
   font-size: 28px;
@@ -101,11 +102,11 @@ li {
 
 .link {
   color: #7e7e82;
-  font-family: TTLakes-Medium, sans-serif;
+  font-family: $LakesMedium;
   font-size: 16px;
   line-height: 24px;
   white-space: nowrap;
-  margin-left: 15px;
+  margin-left: 16px;
   text-decoration: none;
   padding: 8px 16px;
 }
@@ -118,19 +119,19 @@ li {
 }
 
 .about {
-  font-family: TTLakes-Regular, sans-serif;
+  font-family: $LakesRegular;
   font-size: 14px;
   line-height: 18px;
 }
 
 .about__text {
-  margin: 24px 20px 15px 24px;
+  margin: 24px 16px 15px 20px;
   max-height: 90px;
   overflow: hidden;
 }
 
 .read-more {
-  margin: 0 20px 15px 24px;
+  margin: 0 20px 15px 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
