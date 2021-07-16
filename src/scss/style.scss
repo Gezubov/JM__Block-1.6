@@ -117,7 +117,7 @@ li {
   border-radius: 5px;
   padding: 6px 14px;
 }
-
+////////////////main/////////////
 .about {
   font-family: $LakesRegular;
   font-size: 14px;
@@ -148,4 +148,87 @@ li {
 }
 .cps-photo {
   max-width: 100vw;
+}
+.brands {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #d9fff5;
+}
+.brands-header {
+  padding: 16px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+.brands-header__title {
+  margin: 0;
+  color: #7e7e82;
+  text-transform: uppercase;
+  font-family: $LakesRegular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 72px;
+  border: #eaeaea solid 1px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.slider__link {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.swiper-container {
+  padding: 16px;
+  width: 100vw;
+  min-height: 135px;
+}
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  background: #dddddd;
+}
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+/* кнопки скрыть/показать */
+.button-show,
+.button-hide {
+  display: flex;
+  align-items: center;
+}
+.button__text {
+  font-family: "TTLakes-Medium", sans-serif;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button__img {
+  margin-right: 15px;
+}
+.button.hidden {
+  display: none;
+}
+.click {
+  cursor: pointer;
+}
+.show {
+  display: none;
 }
