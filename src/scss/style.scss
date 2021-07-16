@@ -1,9 +1,11 @@
+@import "nullstyle.scss";
+
 $bgColor: #24292e;
 $text: #fff;
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  font-family: "Comic";
+  src: url("../fonts/comic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
