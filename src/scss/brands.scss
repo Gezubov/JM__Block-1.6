@@ -1,0 +1,25 @@
+@import "vars.scss";
+
+.card-brands {
+  width: 240px;
+  height: 72px;
+  border: #eaeaea solid 1px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  list-style: none;
+}
+.cards-container-brands {
+  padding: 16px;
+  width: 100vw;
+  min-height: 135px;
+}
+.card-brands__link {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}

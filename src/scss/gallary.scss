@@ -1,0 +1,60 @@
+@import "vars.scss";
+
+.gallary {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #d9fff5;
+}
+.gallary-header {
+  padding: 16px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+.gallary-header__title {
+  margin: 0;
+  color: #7e7e82;
+  text-transform: uppercase;
+  font-family: $LakesRegular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+///////////pagination/////////
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  background: #dddddd;
+}
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+/////скрыть/показать///////////
+.button-show,
+.button-hide {
+  display: flex;
+  align-items: center;
+}
+.button__text {
+  font-family: $LakesMedium;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button__img {
+  margin-right: 15px;
+}
+.button.hidden {
+  display: none;
+}
+.show {
+  display: none;
+}

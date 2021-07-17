@@ -7,131 +7,15 @@
 @import "title.scss";
 @import "menu.scss";
 @import "main-content.scss";
+@import "gallary.scss";
+@import "brands.scss";
+@import "repair-type.scss";
+@import "prices.scss";
 
 body {
   background-color: $bgColor_1;
 }
 
-//////////Gallary//////////
-.gallary {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-top: 1px solid #d9fff5;
-}
-.gallary-header {
-  padding: 16px;
-  background: linear-gradient(to right, #f8f8f8, #ffffff);
-}
-.gallary-header__title {
-  margin: 0;
-  color: #7e7e82;
-  text-transform: uppercase;
-  font-family: $LakesRegular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-/////////cards-container////////////
-
-.card-brands {
-  width: 240px;
-  height: 72px;
-  border: #eaeaea solid 1px;
-  border-radius: 6px;
-  background-color: #ffffff;
-  list-style: none;
-}
-.card-brands__link {
-  padding: 16px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-}
-.cards-container-brands {
-  padding: 16px;
-  width: 100vw;
-  min-height: 135px;
-}
-.card-repair-type {
-  width: 240px;
-  height: 160px;
-  border: #eaeaea solid 1px;
-  border-radius: 6px;
-  background-color: #ffffff;
-  list-style: none;
-}
-.card-repair-type__link {
-  padding: 16px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-decoration: none;
-}
-.card-repair-type__text {
-  font-family: $LakesRegular;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #1b1c21;
-}
-.card-repair-type__img {
-  align-self: flex-end;
-}
-
-.cards-container-repair-type {
-  padding: 16px;
-  width: 100vw;
-  min-height: 220px;
-}
-
-///////////pagination/////////
-.swiper-pagination {
-  position: absolute;
-  text-align: center;
-  bottom: 5px;
-  width: 100%;
-}
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  text-align: center;
-  background: #dddddd;
-}
-.swiper-pagination-bullet-active {
-  background: #b5b6bc;
-}
-
-/* кнопки скрыть/показать */
-.button-show,
-.button-hide {
-  display: flex;
-  align-items: center;
-}
-.button__text {
-  font-family: $LakesMedium;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-.button__img {
-  margin-right: 15px;
-}
-.button.hidden {
-  display: none;
-}
 .click {
   cursor: pointer;
-}
-.show {
-  display: none;
 }
