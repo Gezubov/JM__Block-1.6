@@ -1,0 +1,38 @@
+@import "vars.scss";
+
+.header {
+  background-color: $bgColor_2;
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9fff5;
+}
+.header-left-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &::after {
+    content: url("../img/divider.svg");
+    margin: 0 20px;
+    display: block;
+  }
+}
+.header-right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.button {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+.menu-button {
+  margin: 0 16px;
+}
+.button-tablet {
+  display: none;
+}
+.check-status-button {
+  margin: 0 16px;
+}

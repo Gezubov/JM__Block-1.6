@@ -1,5 +1,8 @@
-import Swiper from './index.js'
-let swiper= Swiper;
+import SwiperCore, {Pagination, Swiper} from 'swiper/core';
+// configure Swiper to use modules
+  SwiperCore.use([Pagination]);
+
+let swiper = Swiper;
 let init = false;
 
 let swiperMode = () => {
@@ -16,21 +19,22 @@ let swiperMode = () => {
                 slidesPerView: "auto",
                 spaceBetween: 16,
                 loop: false,
-
                 // If we need pagination
                 pagination: {
                     el: '.swiper-pagination',
                     clickable:true,
+
                     }
             });
         }
     }
 
+
     // Disable (for tablet and desktop)
-    else if(notMobile.matches) {
-        swiper.destroy();
-        init = false;
-    }
+    // else if(notMobile.matches) {
+    //   swiper.destroy();
+    //   init = false;
+    // }
 
 
 }
@@ -43,6 +47,7 @@ window.addEventListener('load', function() {
 
 /* On Resize
 **************************************************************/
-window.addEventListener('resize', function() {
-    swiperMode();
-});
+// window.addEventListener('resize', function() {
+//     swiperMode();
+// });
+
