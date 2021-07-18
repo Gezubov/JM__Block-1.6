@@ -8,8 +8,32 @@
     <title>Ремонт техники</title>
 </head>
 <body>
+  <div class="modal-fedback-wrapper modal-call-wrapper--hidden">
+    <div class="modal-call">
+      <button class=" modal-call-header__button button menu-button-open click" type="button">
+        <img src="./img/btn-burger-open.svg" alt="Меню">
+      </button>
+      <div class="modal-call-title">
+        <h1 class="modal-call-title__text">Заказать звонок</h1>
+      </div>
+      <form action="#" method="post">
+        <input class="modal-call-input"
+        type="tel" name ="usertel" value="" placeholder="Телефон">
+      </form>
 
-  <div class="modal-fedback-wrapper">
+      <span class = "modal-call-submit">
+        Нажимая “отправить”, вы даете согласие на
+        <a href="#" class="modal-call-submit--link">обработку персональных данных</a>
+        и соглашаетесь с нашей
+        <a href="#" class="modal-call-submit--link">политикой конфиденциальности</a>
+      </span>
+      <button class=" modal-call-submit__button button click" type="button">
+        <img src="./img/submit.png" alt="Меню">
+      </button>
+    </div>
+  </div>
+
+  <div class="modal-feedback-wrapper modal-feedback-wrapper--hidden">
 
     <div class="modal-feedback-overlay">
     </div>
@@ -22,20 +46,27 @@
         <h1 class="modal-feedback-title__text">Обратная связь</h1>
       </div>
       <form action="#" method="post">
-        <label class="modal-feedback-input modal-feedback-input__name">
-          <input type="text" name ="username" value="" placeholder="Имя">
-        </label>
-        <label class="modal-feedback-input modal-feedback-input__tel">
-          <input type="tel" name ="usertel" value="" placeholder="Телефон">
-        </label>
-        <label class="modal-feedback-input modal-feedback-input__email">
-          <input type="email" name ="usermail" value=""placeholder="Электронная почта">
-        </label>
-        <label class="modal-feedback-input modal-feedback-input__message">
-          <textarea cols = "33" rows = "5" name ="Message" value=""placeholder="Сообщение" ></textarea>
-        </label>
+
+        <input class="modal-feedback-input"
+        type="text" name ="username" value="" placeholder="Имя">
+        <input class="modal-feedback-input"
+        type="tel" name ="usertel" value="" placeholder="Телефон">
+        <input class="modal-feedback-input"
+        type="email" name ="usermail" value=""placeholder="Электронная почта">
+        <textarea class="modal-feedback-input modal-feedback-input__message" cols = "33" rows = "5" name ="Message" value="" placeholder="Сообщение"></textarea>
       </form>
+
+      <span class = "modal-feedback-submit">
+        Нажимая “отправить”, вы даете согласие на
+        <a href="#" class="modal-feedback-submit--link">обработку персональных данных</a>
+        и соглашаетесь с нашей
+        <a href="#" class="modal-feedback-submit--link">политикой конфиденциальности</a>
+      </span>
+      <button class=" modal-feedback-submit__button button click" type="button">
+        <img src="./img/submit.png" alt="Меню">
+      </button>
     </div>
+
   </div>
 
   <div class="side-menu-wrapper side-menu-wrapper--hidden">

@@ -1,15 +1,15 @@
 @import "vars.scss";
 
-.modal-feedback-wrapper {
+.modal-call-wrapper {
   max-width: 320px;
   position: absolute;
   z-index: 2;
 }
-.modal-feedback-wrapper--hidden {
+.modal-call-wrapper--hidden {
   display: none;
 }
 
-.modal-feedback-overlay {
+.modal-call-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -20,17 +20,17 @@
   filter: blur(5px);
   z-index: -1;
 }
-.modal-feedback {
+.modal-call {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #ffffff;
 }
-.modal-feedback-header__button {
+.modal-call-header__button {
   align-self: flex-start;
   margin: 24px 0 40px 16px;
 }
-.modal-feedback-title__text {
+.modal-call-title__text {
   display: block;
   margin-left: 16px;
   color: #1b1c21;
@@ -48,7 +48,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-.modal-feedback-input {
+.modal-call-input {
   font-family: $LakesRegular;
   font-size: 16px;
   align-self: center;
@@ -60,30 +60,28 @@ form {
   border-radius: 8px;
 }
 
-.modal-feedback-input__message {
+.modal-call-input__message {
   height: 118px;
 }
-textarea {
-  resize: none;
-}
+
 ::placeholder {
   font-family: $LakesRegular;
   font-size: 16px;
   width: 100%;
 }
-.modal-feedback-submit {
+.modal-call-submit {
   max-width: 85%;
   margin: 16px;
   font-family: $LakesRegular;
   font-size: 14px;
   line-height: 16px;
 }
-.modal-feedback-submit--link {
+.modal-call-submit--link {
   text-decoration: none;
   color: #ff3e79;
 }
-.modal-feedback-submit__button {
+.modal-call-submit__button {
   align-self: flex-end;
   margin-right: 16px;
-  margin-bottom: 75px;
+  margin-bottom: 338px;
 }
