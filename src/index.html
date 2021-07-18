@@ -8,9 +8,38 @@
     <title>Ремонт техники</title>
 </head>
 <body>
-  <div class="side-menu-wrapper">
-    <div class="overlay">
 
+  <div class="modal-fedback-wrapper">
+
+    <div class="modal-feedback-overlay">
+    </div>
+
+    <div class="modal-feedback">
+        <button class=" modal-feedback-header__button button menu-button-open click" type="button">
+          <img src="./img/btn-burger-open.svg" alt="Меню">
+      </button>
+      <div class="modal-feedback-title">
+        <h1 class="modal-feedback-title__text">Обратная связь</h1>
+      </div>
+      <form action="#" method="post">
+        <label class="modal-feedback-input modal-feedback-input__name">
+          <input type="text" name ="username" value="" placeholder="Имя">
+        </label>
+        <label class="modal-feedback-input modal-feedback-input__tel">
+          <input type="tel" name ="usertel" value="" placeholder="Телефон">
+        </label>
+        <label class="modal-feedback-input modal-feedback-input__email">
+          <input type="email" name ="usermail" value=""placeholder="Электронная почта">
+        </label>
+        <label class="modal-feedback-input modal-feedback-input__message">
+          <textarea cols = "33" rows = "5" name ="Message" value=""placeholder="Сообщение" ></textarea>
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <div class="side-menu-wrapper side-menu-wrapper--hidden">
+    <div class="side-menu-overlay">
     </div>
     <div class="side-menu">
         <header class="side-menu-header">
@@ -81,401 +110,402 @@
         </footer>
     </div>
   </div>
+  <div class="blur">
+    <header class="header">
+        <div class="header-left-side">
 
-  <header class="header">
-      <div class="header-left-side">
+          <button class="button menu-button" type="button">
+              <img src="./img/btn-burger.svg" alt="Меню">
+          </button>
 
-        <button class="button menu-button" type="button">
-            <img src="./img/btn-burger.svg" alt="Меню">
-        </button>
+          <div class="logo">
+              <img src="./img/logo.svg" alt="Логотип">
+          </div>
 
-        <div class="logo">
-            <img src="./img/logo.svg" alt="Логотип">
         </div>
 
+        <div class="header-right-side">
+
+          <button class="button button-tablet call-button" type="button">
+              <img src="./img/call.svg" alt="Позвонить">
+          </button>
+
+          <button class="button button-tablet chat-button" type="button">
+              <img src="./img/chat.svg" alt="Открыть чат">
+          </button>
+
+          <button class="button button-tablet profile-button" type="button">
+              <img src="./img/profile.svg" alt="Открыть профиль">
+          </button>
+
+          <button class="button repair-button" type="button">
+              <img src="./img/btn-repair.svg" alt="Оставить заявку на ремонт">
+          </button>
+
+          <button class="button check-status-button" type="button">
+              <img src="./img/btn-checkStatus.svg" alt="Узнать статус ремонта">
+          </button>
+
+        </div>
+    </header>
+    <div class="title-wrapper">
+
+      <h1 class="title__text">Услуги и сервисы</h1>
+
+      <div class="title-menu">
+          <button class="button" type="button">
+              <span class="button__text">Оставить заявку</span>
+              <img class="button__image" src="./img/btn-repair.svg" alt="Оставить заявку на ремонт">
+          </button>
+
+          <button class="button" type="button">
+              <span class="button__text ">Статус ремонта</span>
+              <img class="button__image" src="./img/btn-checkStatus.svg" alt="Оставить заявку на ремонт">
+          </button>
+
       </div>
-
-      <div class="header-right-side">
-
-        <button class="button button-tablet call-button" type="button">
-            <img src="./img/call.svg" alt="Позвонить">
-        </button>
-
-        <button class="button button-tablet chat-button" type="button">
-            <img src="./img/chat.svg" alt="Открыть чат">
-        </button>
-
-        <button class="button button-tablet profile-button" type="button">
-            <img src="./img/profile.svg" alt="Открыть профиль">
-        </button>
-
-        <button class="button repair-button" type="button">
-            <img src="./img/btn-repair.svg" alt="Оставить заявку на ремонт">
-        </button>
-
-        <button class="button check-status-button" type="button">
-            <img src="./img/btn-checkStatus.svg" alt="Узнать статус ремонта">
-        </button>
-
-      </div>
-  </header>
-  <div class="title-wrapper">
-
-    <h1 class="title__text">Услуги и сервисы</h1>
-
-    <div class="title-menu">
-        <button class="button" type="button">
-            <span class="button__text">Оставить заявку</span>
-            <img class="button__image" src="./img/btn-repair.svg" alt="Оставить заявку на ремонт">
-        </button>
-
-        <button class="button" type="button">
-            <span class="button__text ">Статус ремонта</span>
-            <img class="button__image" src="./img/btn-checkStatus.svg" alt="Оставить заявку на ремонт">
-        </button>
-
     </div>
-  </div>
-  <nav>
-    <menu class="navigation">
-        <li><a href="#" class="link">Ремонтируемые бренды</a></li>
-        <li><a href="#" class="link">Ремонтируемые устройства</a></li>
-        <li><a href="#" class="link">Цены на услуги</a></li>
-        <li><a href="#" class="link">Адреса сервисных центров</a></li>
-        <li><a href="#" class="link">Специальные цены</a></li>
-        <li><a href="#" class="link">Отзывы</a></li>
-    </menu>
-  </nav>
-  <main>
-    <article class="about">
-        <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
-            производителя.<br><br>
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-            что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
-            что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-        </p>
-            <a href="#" class="read-more">
-              <img class="read-more__btn" src="./img/btn-expand.svg" alt="Читать далее">
-              <p>Читать далее</p>
-            </a>
-    </article>
-    <img class="cps-photo" src="./img/cps.jpg" alt="Фото входной двери компании">
+    <nav>
+      <menu class="navigation">
+          <li><a href="#" class="link">Ремонтируемые бренды</a></li>
+          <li><a href="#" class="link">Ремонтируемые устройства</a></li>
+          <li><a href="#" class="link">Цены на услуги</a></li>
+          <li><a href="#" class="link">Адреса сервисных центров</a></li>
+          <li><a href="#" class="link">Специальные цены</a></li>
+          <li><a href="#" class="link">Отзывы</a></li>
+      </menu>
+    </nav>
+    <main>
+      <article class="about">
+          <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+              Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+              производителя.<br><br>
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+              что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
+              что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+          </p>
+              <a href="#" class="read-more">
+                <img class="read-more__btn" src="./img/btn-expand.svg" alt="Читать далее">
+                <p>Читать далее</p>
+              </a>
+      </article>
+      <img class="cps-photo" src="./img/cps.jpg" alt="Фото входной двери компании">
 
-    <div class="gallary">
-      <div class="gallary-header">
-          <h1 class ="gallary-header__title">Ремонт техники различных брендов</h1>
+      <div class="gallary">
+        <div class="gallary-header">
+            <h1 class ="gallary-header__title">Ремонт техники различных брендов</h1>
+        </div>
+
+        <div class="swiper-container cards-container-brands">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper cards-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/lenovo.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/samsung.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/apple.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/veiwsonic.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/bosh.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/hp.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/acer.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/sony.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/lenovo.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/samsung.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-brands">
+                    <a href="#" class="card-brands__link">
+                        <img src = "./img/brands/apple.png">
+                        <img src = "./img/icons/go.svg">
+                    </a>
+                </div>
+
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="show">
+            <button class="button-show button click" type="button">
+                <img class = "button__img" src="./img/icons/show.svg">
+                <span class = "button__text">Показать все</span>
+            </button>
+            <button class="button-hide button click hidden" type="button">
+                <img class = "button__img" src="./img/icons/hide.svg">
+                <span class = "button__text">Скрыть</span>
+            </button>
+        </div>
       </div>
 
-      <div class="swiper-container cards-container-brands">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper cards-wrapper">
+      <div class="gallary">
+        <div class="gallary-header">
+            <h1 class ="gallary-header__title">Ремонт различных видов техники</h1>
+        </div>
+
+        <div class="swiper-container cards-container-repair-type">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper cards-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт ноутбуков</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт планшетов</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт ПК</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт мониторов</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт планшетов</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт ПК</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт мониторов</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт ноутбуков</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт планшетов</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт ПК</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+                <div class="swiper-slide card-repair-type">
+                    <a href="#" class="card-repair-type__link">
+                      <span class = "card-repair-type__text">Ремонт Мониторов</span>
+                      <img class = "card-repair-type__img" src = "./img/icons/go.svg">
+                    </a>
+                </div>
+
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="show">
+            <button class="button-show button click" type="button">
+                <img class = "button__img" src="./img/icons/show.svg">
+                <span class = "button__text">Показать все</span>
+            </button>
+            <button class="button-hide button click hidden" type="button">
+                <img class = "button__img" src="./img/icons/hide.svg">
+                <span class = "button__text">Скрыть</span>
+            </button>
+        </div>
+      </div>
+
+      <div class="gallary">
+        <div class="gallary-header">
+            <h1 class ="gallary-header__title">Цены на услуги</h1>
+        </div>
+
+        <div class="swiper-container cards-container-prices">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper cards-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/lenovo.png">
-                      <img src = "./img/icons/go.svg">
+              <div class="swiper-slide card-prices">
+                  <a href="#" class="card-prices__link">
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Ремонтные услуги</span>
+                      <span class = "card-prices__text card-prices__text--black">Диагностика</span>
+                    </div>
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Цена</span>
+                      <span class = "card-prices__text card-prices__text--black">Бесплатно</span>
+                    </div>
+                    <div class = "card-prices__text-wrapper-bottom">
+                      <div class = "card-prices__text-wrapper">
+                        <span class = "card-prices__text">Срок</span>
+                        <span class = "card-prices__text card-prices__text--black">30 мин</span>
+                      </div>
+                      <img class = "card-prices__img" src = "./img/order.png">
+                    </div>
                   </a>
               </div>
-              <div class="swiper-slide card-brands">
-                   <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/samsung.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/apple.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/veiwsonic.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/bosh.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/hp.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/acer.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/sony.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/lenovo.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/samsung.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-brands">
-                  <a href="#" class="card-brands__link">
-                      <img src = "./img/brands/apple.png">
-                      <img src = "./img/icons/go.svg">
-                  </a>
-              </div>
-
-          </div>
-          <!-- pagination -->
-          <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="show">
-          <button class="button-show button click" type="button">
-              <img class = "button__img" src="./img/icons/show.svg">
-              <span class = "button__text">Показать все</span>
-          </button>
-          <button class="button-hide button click hidden" type="button">
-              <img class = "button__img" src="./img/icons/hide.svg">
-              <span class = "button__text">Скрыть</span>
-          </button>
-      </div>
-    </div>
-
-    <div class="gallary">
-      <div class="gallary-header">
-          <h1 class ="gallary-header__title">Ремонт различных видов техники</h1>
-      </div>
-
-      <div class="swiper-container cards-container-repair-type">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper cards-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт ноутбуков</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                   <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт планшетов</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт ПК</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт мониторов</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт планшетов</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт ПК</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт мониторов</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт ноутбуков</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт планшетов</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт ПК</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-              <div class="swiper-slide card-repair-type">
-                  <a href="#" class="card-repair-type__link">
-                    <span class = "card-repair-type__text">Ремонт Мониторов</span>
-                    <img class = "card-repair-type__img" src = "./img/icons/go.svg">
-                  </a>
-              </div>
-
-          </div>
-          <!-- pagination -->
-          <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="show">
-          <button class="button-show button click" type="button">
-              <img class = "button__img" src="./img/icons/show.svg">
-              <span class = "button__text">Показать все</span>
-          </button>
-          <button class="button-hide button click hidden" type="button">
-              <img class = "button__img" src="./img/icons/hide.svg">
-              <span class = "button__text">Скрыть</span>
-          </button>
-      </div>
-    </div>
-
-    <div class="gallary">
-      <div class="gallary-header">
-          <h1 class ="gallary-header__title">Цены на услуги</h1>
-      </div>
-
-      <div class="swiper-container cards-container-prices">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper cards-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide card-prices">
+              <div class="swiper-slide card-prices">
                 <a href="#" class="card-prices__link">
                   <div class = "card-prices__text-wrapper">
                     <span class = "card-prices__text">Ремонтные услуги</span>
-                    <span class = "card-prices__text card-prices__text--black">Диагностика</span>
+                    <span class = "card-prices__text card-prices__text--black">Замена дисплея</span>
                   </div>
                   <div class = "card-prices__text-wrapper">
                     <span class = "card-prices__text">Цена</span>
-                    <span class = "card-prices__text card-prices__text--black">Бесплатно</span>
+                    <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                   </div>
                   <div class = "card-prices__text-wrapper-bottom">
                     <div class = "card-prices__text-wrapper">
                       <span class = "card-prices__text">Срок</span>
-                      <span class = "card-prices__text card-prices__text--black">30 мин</span>
+                      <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
                     </div>
                     <img class = "card-prices__img" src = "./img/order.png">
                   </div>
                 </a>
-            </div>
-            <div class="swiper-slide card-prices">
-              <a href="#" class="card-prices__link">
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Ремонтные услуги</span>
-                  <span class = "card-prices__text card-prices__text--black">Замена дисплея</span>
-                </div>
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Цена</span>
-                  <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
-                </div>
-                <div class = "card-prices__text-wrapper-bottom">
+              </div>
+              <div class="swiper-slide card-prices">
+                <a href="#" class="card-prices__link">
                   <div class = "card-prices__text-wrapper">
-                    <span class = "card-prices__text">Срок</span>
-                    <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    <span class = "card-prices__text">Ремонтные услуги</span>
+                    <span class = "card-prices__text card-prices__text--black">Замена полифонтческого динамика</span>
                   </div>
-                  <img class = "card-prices__img" src = "./img/order.png">
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide card-prices">
-              <a href="#" class="card-prices__link">
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Ремонтные услуги</span>
-                  <span class = "card-prices__text card-prices__text--black">Замена полифонтческого динамика</span>
-                </div>
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Цена</span>
-                  <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
-                </div>
-                <div class = "card-prices__text-wrapper-bottom">
                   <div class = "card-prices__text-wrapper">
-                    <span class = "card-prices__text">Срок</span>
-                    <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    <span class = "card-prices__text">Цена</span>
+                    <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                   </div>
-                  <img class = "card-prices__img" src = "./img/order.png">
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide card-prices">
-              <a href="#" class="card-prices__link">
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Ремонтные услуги</span>
-                  <span class = "card-prices__text card-prices__text--black">Тестирование с выдачей технического заключения</span>
-                </div>
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Цена</span>
-                  <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
-                </div>
-                <div class = "card-prices__text-wrapper-bottom">
+                  <div class = "card-prices__text-wrapper-bottom">
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Срок</span>
+                      <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    </div>
+                    <img class = "card-prices__img" src = "./img/order.png">
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide card-prices">
+                <a href="#" class="card-prices__link">
                   <div class = "card-prices__text-wrapper">
-                    <span class = "card-prices__text">Срок</span>
-                    <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    <span class = "card-prices__text">Ремонтные услуги</span>
+                    <span class = "card-prices__text card-prices__text--black">Тестирование с выдачей технического заключения</span>
                   </div>
-                  <img class = "card-prices__img" src = "./img/order.png">
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide card-prices">
-              <a href="#" class="card-prices__link">
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Ремонтные услуги</span>
-                  <span class = "card-prices__text card-prices__text--black">Замена программного обеспечения</span>
-                </div>
-                <div class = "card-prices__text-wrapper">
-                  <span class = "card-prices__text">Цена</span>
-                  <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
-                </div>
-                <div class = "card-prices__text-wrapper-bottom">
                   <div class = "card-prices__text-wrapper">
-                    <span class = "card-prices__text">Срок</span>
-                    <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    <span class = "card-prices__text">Цена</span>
+                    <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                   </div>
-                  <img class = "card-prices__img" src = "./img/order.png">
-                </div>
-              </a>
+                  <div class = "card-prices__text-wrapper-bottom">
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Срок</span>
+                      <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    </div>
+                    <img class = "card-prices__img" src = "./img/order.png">
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide card-prices">
+                <a href="#" class="card-prices__link">
+                  <div class = "card-prices__text-wrapper">
+                    <span class = "card-prices__text">Ремонтные услуги</span>
+                    <span class = "card-prices__text card-prices__text--black">Замена программного обеспечения</span>
+                  </div>
+                  <div class = "card-prices__text-wrapper">
+                    <span class = "card-prices__text">Цена</span>
+                    <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
+                  </div>
+                  <div class = "card-prices__text-wrapper-bottom">
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Срок</span>
+                      <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
+                    </div>
+                    <img class = "card-prices__img" src = "./img/order.png">
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
-          <!-- pagination -->
-          <div class="swiper-pagination"></div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
       </div>
-    </div>
 
-    <article class="comm">
-      <p class="comm__text">Все цены указаны с учетом НДС.
-         Стоимость ремонта указана на единичную услугу. Для
-         получения коммерческого предложения на постоянное обслуживание,
-         оставьте заявку.
-      </p>
-      <a href="#" class="comm-make-order">
-        <span class="comm-make-order__text">Получить коммерческое предложение</span>
-        <img class="comm-make-order__btn" src="./img/icons/more.svg" alt="Читать далее">
+      <article class="comm">
+        <p class="comm__text">Все цены указаны с учетом НДС.
+          Стоимость ремонта указана на единичную услугу. Для
+          получения коммерческого предложения на постоянное обслуживание,
+          оставьте заявку.
+        </p>
+        <a href="#" class="comm-make-order">
+          <span class="comm-make-order__text">Получить коммерческое предложение</span>
+          <img class="comm-make-order__btn" src="./img/icons/more.svg" alt="Читать далее">
 
-      </a>
-    </article>
-  </main>
-  <footer class="footer">
-    <span class = "footer__text">&#169; 2019 CPS<br>Разработано коммандой Apesong</span>
-    <span class = "footer__text">Политика конфиденциальности</span>
-    <span class = "footer__text">Информация, размещенная на данной странице,
-      не является публичной офертой</span>
-  </footer>
+        </a>
+      </article>
+    </main>
+    <footer class="footer">
+      <span class = "footer__text">&#169; 2019 CPS<br>Разработано коммандой Apesong</span>
+      <span class = "footer__text">Политика конфиденциальности</span>
+      <span class = "footer__text">Информация, размещенная на данной странице,
+        не является публичной офертой</span>
+    </footer>
+  </div>
 </body>
 </html>

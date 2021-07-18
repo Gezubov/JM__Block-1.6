@@ -3,10 +3,13 @@
 .side-menu-wrapper {
   position: absolute;
   z-index: 2;
+}
+////////////////скрыть меню///////////
+.side-menu-wrapper--hidden {
   display: none;
 }
-
-.overlay {
+////////////////скрыть меню///////////
+.side-menu-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
