@@ -5,9 +5,83 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Привет SCSS</title>
+    <title>Ремонт техники</title>
 </head>
 <body>
+  <div class="side-menu-wrapper">
+    <div class="overlay">
+
+    </div>
+    <div class="side-menu">
+        <header class="side-menu-header">
+
+            <button class=" header__button button menu-button-open click" type="button">
+                <img src="./img/btn-burger-open.svg" alt="Меню">
+            </button>
+
+            <img class ="side-menu-logo" src="./img/logo.svg" alt="Логотип">
+
+            <button class="header__button button search-button click" type="button">
+                <img src="./img/search.svg" alt="Поиск">
+            </button>
+
+        </header>
+
+        <div class="side-menu-content">
+
+            <nav>
+                <menu class="side-navigation">
+                    <li class="side-navigation__list side-navigation__list--active click"><a href="#" class="side-navigation__link side-navigation__link--active">Ремонт техники</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Услуги и сервисы</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Корпоративным клиентам</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Продавцам техники</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Партнерам</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Производителям</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Наши сервисные центры</a></li>
+                    <li class="side-navigation__list click"><a href="#" class="side-navigation__link">Контакты</a></li>
+                </menu>
+            </nav>
+
+        </div>
+
+        <footer class="side-menu-footer">
+
+            <button class="button footer__button call-button click" type="button">
+                <img src="./img/call.svg" alt="Позвонить">
+            </button>
+
+            <button class="button footer__button chat-button click" type="button">
+                <img src="./img/chat.svg" alt="Открыть чат">
+            </button>
+
+            <button class="button footer__button profile-button click" type="button">
+                <img src="./img/profile.svg" alt="Открыть профиль">
+            </button>
+
+            <div class="contacts">
+                <a class="contacts__mail click" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="contacts__phone click" href="tel:+88008908900">8 800 890 8900</a>
+            </div>
+
+            <div class="lang">
+                <button class="button footer__button lang__button lang__button--active click" type="button">
+                    <p>RU</p>
+                </button>
+
+                <button class="button footer__button lang__button click" type="button">
+                    <p>EN</p>
+                </button>
+
+                <button class="button footer__button lang__button click" type="button">
+                    <p>CH</p>
+                </button>
+
+            </div>
+
+        </footer>
+    </div>
+  </div>
+
   <header class="header">
       <div class="header-left-side">
 
@@ -81,10 +155,10 @@
             что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
             что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
         </p>
-        <div class="read-more">
-            <img class="read-more__btn" src="./img/btn-expand.svg" alt="Читать далее">
-            <a href="#" class="read-more__text">Читать далее</a>
-        </div>
+            <a href="#" class="read-more">
+              <img class="read-more__btn" src="./img/btn-expand.svg" alt="Читать далее">
+              <p>Читать далее</p>
+            </a>
     </article>
     <img class="cps-photo" src="./img/cps.jpg" alt="Фото входной двери компании">
 
@@ -382,10 +456,26 @@
           <!-- pagination -->
           <div class="swiper-pagination"></div>
       </div>
-
     </div>
 
-  </main>
+    <article class="comm">
+      <p class="comm__text">Все цены указаны с учетом НДС.
+         Стоимость ремонта указана на единичную услугу. Для
+         получения коммерческого предложения на постоянное обслуживание,
+         оставьте заявку.
+      </p>
+      <a href="#" class="comm-make-order">
+        <span class="comm-make-order__text">Получить коммерческое предложение</span>
+        <img class="comm-make-order__btn" src="./img/icons/more.svg" alt="Читать далее">
 
+      </a>
+    </article>
+  </main>
+  <footer class="footer">
+    <span class = "footer__text">&#169; 2019 CPS<br>Разработано коммандой Apesong</span>
+    <span class = "footer__text">Политика конфиденциальности</span>
+    <span class = "footer__text">Информация, размещенная на данной странице,
+      не является публичной офертой</span>
+  </footer>
 </body>
 </html>

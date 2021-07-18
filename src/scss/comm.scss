@@ -1,0 +1,26 @@
+@import "vars.scss";
+
+.comm {
+  font-family: $LakesRegular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.comm__text {
+  margin: 5px 25px 15px 16px;
+}
+
+.comm-make-order {
+  display: block;
+  margin: 0 30px 15px 16px;
+  font-family: $LakesRegular;
+  color: #1b1c21;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16px;
+}
+.comm-make-order__btn {
+  vertical-align: top;
+}

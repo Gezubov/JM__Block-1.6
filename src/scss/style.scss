@@ -2,15 +2,19 @@
 @import "../../node_modules/swiper/components/pagination/pagination.scss";
 @import "vars.scss";
 
+@import "side-menu.scss";
+
 @import "nullstyle.scss";
 @import "header.scss";
 @import "title.scss";
 @import "menu.scss";
-@import "main-content.scss";
+@import "about.scss";
 @import "gallary.scss";
 @import "brands.scss";
 @import "repair-type.scss";
 @import "prices.scss";
+@import "comm.scss";
+@import "footer.scss";
 
 body {
   background-color: $bgColor_1;

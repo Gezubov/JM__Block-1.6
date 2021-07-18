@@ -1,0 +1,16 @@
+@import "vars.scss";
+
+.footer {
+  border-top: 1px solid #d9fff5;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 0 16px;
+}
+.footer__text {
+  text-align: center;
+  font-family: $LakesRegular;
+  color: #7e7e82;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}

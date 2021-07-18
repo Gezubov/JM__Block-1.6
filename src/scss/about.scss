@@ -13,20 +13,15 @@
 }
 
 .read-more {
-  margin: 0 20px 15px 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.read-more__text {
   font-family: $LakesRegular;
   color: #1b1c21;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 6px;
 }
 .cps-photo {
   max-width: 100vw;
