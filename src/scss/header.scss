@@ -1,39 +1,122 @@
 @import "vars.scss";
 
 .header {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $bgColor_2;
   min-height: 88px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d9fff5;
+  padding: 16px;
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+  @media (min-width: 1366px) {
+    display: none;
+  }
 }
 .header-left-side {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  &::after {
-    content: url("../img/divider.svg");
-    margin: 0 20px;
-    display: block;
-  }
 }
+
 .header-right-side {
-  margin-right: 16px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .button {
   padding: 0;
   border: none;
   background-color: inherit;
 }
-.menu-button {
-  margin: 0 16px;
+
+.logo {
+  margin-left: 16px;
+  display: flex;
+  &:after {
+    content: url("../img/divider.svg");
+    margin: auto 20px;
+    @media (min-width: 768px) {
+      content: none;
+    }
+  }
+  &:before {
+    @media (min-width: 768px) {
+      content: url("../img/divider.svg");
+      margin: auto 20px;
+    }
+  }
 }
 .button-tablet {
   display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
+.chat-button {
+  margin: 0 16px;
+}
+
+.repair-button {
+  display: flex;
+  &:before {
+    @media (min-width: 768px) {
+      content: url("../img/divider.svg");
+      margin: auto 20px;
+    }
+  }
+}
+
 .check-status-button {
   margin-left: 16px;
+}
+
+@media (min-width: 1366px) {
+  .header {
+    display: none;
+  }
+  .cps-photo {
+    width: 531px;
+    margin-top: 24px;
+    margin-right: 24px;
+    border-radius: 5px;
+  }
+  .navigation {
+    min-height: 75px;
+    margin-left: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .link {
+    margin: 0;
+  }
+
+  .title-menu {
+    display: flex;
+    margin-right: 20px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+  }
+  .button__text {
+    font-family: TTLakes-Regular, sans-serif;
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .button__image {
+    margin-left: 8px;
+  }
 }
