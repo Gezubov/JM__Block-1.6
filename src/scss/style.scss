@@ -21,12 +21,22 @@
 body {
   background-color: $bgColor_1;
 }
-
-// .blur {
-//   filter: blur(5px);
-//   display: none;
-// }
+.page-wrapper {
+  width: 100vw;
+  max-width: 1440px;
+  display: flex;
+}
+.blur {
+  // filter: blur(5px);
+  // display: none;
+  max-width: calc(100-320px);
+}
 
 .click {
   cursor: pointer;
+}
+
+button:not(.lang__button):hover {
+  filter: hue-rotate(30deg);
+  transition: ease 1s;
 }
