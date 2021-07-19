@@ -1,21 +1,38 @@
 @import "vars.scss";
 
 .title-wrapper {
-  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 16px;
+  @media (min-width: 768px) {
+    margin: 24px;
+  }
+  @media (min-width: 1366px) {
+    margin: 42px 30px 10px 35px;
+  }
 }
 .title-menu {
   display: none;
+  @media (min-width: 1366px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .title__text {
-  display: block;
-  margin-left: 16px;
   color: #1b1c21;
   font-family: $LakesBold;
   font-size: 28px;
   line-height: 40px;
-}
-.title__text:before {
-  content: url("../img/highlight.svg");
-  position: absolute;
-  left: 0;
+  &:before {
+    content: url("../img/highlight.svg");
+    position: absolute;
+    left: 0;
+    @media (min-width: 1366px) {
+      content: url("../img/highlight-desktop.svg");
+      position: absolute;
+      left: 2px;
+    }
+  }
 }
