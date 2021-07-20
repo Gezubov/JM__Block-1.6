@@ -7,6 +7,17 @@
   border-radius: 6px;
   background-color: #ffffff;
   list-style: none;
+  @media (min-width: 768px) {
+    width: 224px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+}
+.cards-repair-type-container {
+  min-height: 220px;
+  @media (min-width: 768px) {
+    min-height: 0;
+  }
 }
 .card-repair-type__link {
   padding: 16px;
@@ -18,11 +29,7 @@
   align-items: flex-start;
   text-decoration: none;
 }
-.cards-container-repair-type {
-  padding: 16px;
-  width: 100vw;
-  min-height: 220px;
-}
+
 .card-repair-type__text {
   font-family: $LakesRegular;
   font-size: 16px;

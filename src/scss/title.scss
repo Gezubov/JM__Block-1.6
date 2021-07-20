@@ -10,6 +10,7 @@
     margin-bottom: 32px;
   }
   @media (min-width: 1366px) {
+    max-width: 1055px;
     margin: 42px 30px 10px 35px;
   }
 }
@@ -32,8 +33,9 @@
     left: 0;
     @media (min-width: 1366px) {
       content: url("../img/highlight-desktop.svg");
-      position: absolute;
-      left: 2px;
+      position: relative;
+      top: 8px;
+      left: -33px;
     }
   }
 }

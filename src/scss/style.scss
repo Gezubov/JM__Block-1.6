@@ -22,9 +22,14 @@ body {
   background-color: $bgColor_1;
 }
 .page-wrapper {
-  width: 100vw;
+  // min-width: 100vw;
   max-width: 1440px;
-  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 1366px) {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
 }
 .blur {
   // filter: blur(5px);
