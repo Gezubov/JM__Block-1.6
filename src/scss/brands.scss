@@ -12,6 +12,11 @@
     margin-right: 24px;
     margin-bottom: 16px;
   }
+  @media (min-width: 1366px) {
+    width: 240px;
+    margin-right: 30px;
+    margin-bottom: 16px;
+  }
 }
 
 .card-brands__link {
