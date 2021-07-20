@@ -1,7 +1,6 @@
 @import "vars.scss";
 
 .about {
-  max-width: 1120px;
   font-family: $LakesRegular;
   font-size: 14px;
   line-height: 18px;
@@ -9,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     line-height: 20px;
+  }
+  @media (min-width: 1366px) {
+    margin-left: 15px;
+    max-width: 1120px;
   }
 }
 

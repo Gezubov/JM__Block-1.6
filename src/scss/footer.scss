@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: column;
   padding: 16px 16px 0 16px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 24px 40px 24px;
+  }
 }
 .footer__text {
   text-align: center;
@@ -12,5 +17,20 @@
   color: #7e7e82;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 16px;
+}
+.footer__text--left {
+  @media (min-width: 768px) {
+    text-align: start;
+    width: 220px;
+  }
+}
+.footer__text--right {
+  @media (min-width: 768px) {
+    text-align: end;
+    width: 220px;
+  }
+  @media (min-width: 1366px) {
+    text-align: end;
+    width: 330px;
+  }
 }

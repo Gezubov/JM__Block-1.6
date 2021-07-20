@@ -4,10 +4,17 @@
   font-family: $LakesRegular;
   font-size: 14px;
   line-height: 20px;
+  max-width: 480px;
 }
 
 .comm__text {
   margin: 5px 25px 15px 16px;
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media (min-width: 1366px) {
+    margin-left: 35px;
+  }
 }
 
 .comm-make-order {
@@ -20,6 +27,12 @@
   font-size: 16px;
   line-height: 24px;
   margin-left: 16px;
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media (min-width: 1366px) {
+    margin-left: 35px;
+  }
 }
 .comm-make-order__btn {
   vertical-align: top;
