@@ -37,6 +37,9 @@ body {
   // display: none;
   max-width: calc(100-320px);
 }
+.blur--true {
+  filter: blur(5px);
+}
 
 .click {
   cursor: pointer;
