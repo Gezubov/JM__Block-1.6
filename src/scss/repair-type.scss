@@ -1,5 +1,7 @@
 @import "vars.scss";
-
+.gallary-repair-type--open {
+  max-height: fit-content;
+}
 .card-repair-type {
   width: 240px;
   height: 160px;

@@ -1,5 +1,9 @@
 @import "vars.scss";
 
+.gallary-brands--open {
+  max-height: fit-content;
+}
+
 .card-brands {
   width: 240px;
   height: 72px;

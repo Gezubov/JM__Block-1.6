@@ -231,17 +231,27 @@
                 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
                 что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
                 что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                производителя.<br><br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
             </p>
-            <a href="#" class="read-more">
-              <img class="read-more__btn" src="./img/btn-expand.svg" alt="Читать далее">
+            <button type="button" class="button read-more-btn show-btn">
+              <img class="read-more__img" src="./img/btn-expand.svg" alt="Читать далее">
               <p>Читать далее</p>
-            </a>
+            </button>
+            <button type="button" class="button read-more-btn hide-btn hidden">
+              <img class="hide__img" src="./img/btn-expand.svg" alt="Скрыть">
+              <p>Скрыть</p>
+            </button>
           </div>
             <img class="cps-photo" src="./img/cps.jpg" alt="Фото входной двери компании">
         </article>
 
 
-         <div class="gallary">
+         <div class="gallary gallary-brands">
           <div class="gallary-header">
               <h1 class ="gallary-header__title">Ремонт техники различных брендов</h1>
           </div>
@@ -323,18 +333,18 @@
           </div>
 
           <div class="show">
-              <button class="button-show button click" type="button">
+              <button class="button-show button-show-brands button click" type="button">
                   <img class = "button__img" src="./img/icons/show.svg">
                   <span class = "button__text">Показать все</span>
               </button>
-              <button class="button-hide button click hidden" type="button">
+              <button class="button-hide button-hide-brands button click hidden" type="button">
                   <img class = "button__img" src="./img/icons/hide.svg">
                   <span class = "button__text">Скрыть</span>
               </button>
           </div>
         </div>
 
-        <div class="gallary">
+        <div class="gallary gallary-repair-type">
           <div class="gallary-header">
               <h1 class ="gallary-header__title">Ремонт различных видов техники</h1>
           </div>
@@ -416,11 +426,11 @@
           </div>
 
           <div class="show">
-              <button class="button-show button click" type="button">
+              <button class="button-show button-show-repair-type button click" type="button">
                   <img class = "button__img" src="./img/icons/show.svg">
                   <span class = "button__text">Показать все</span>
               </button>
-              <button class="button-hide button click hidden" type="button">
+              <button class="button-hide button-hide-repair-type button click hidden" type="button">
                   <img class = "button__img" src="./img/icons/hide.svg">
                   <span class = "button__text">Скрыть</span>
               </button>
@@ -436,19 +446,39 @@
 
               <div class="swiper-wrapper cards-wrapper cards-wrapper-prices">
 
+
+                <div class="swiper-slide card-prices card-prices-top">
+                  <div class="card-prices__link">
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Ремонтные услуги</span>
+                    </div>
+                    <div class = "card-prices__text-wrapper">
+                      <span class = "card-prices__text">Цена</span>
+                    </div>
+                    <div class = "card-prices__text-wrapper-bottom">
+                      <div class = "card-prices__text-wrapper">
+                        <span class = "card-prices__text">Срок</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
                 <div class="swiper-slide card-prices card-prices-first">
                     <a href="#" class="card-prices__link">
                       <div class = "card-prices__text-wrapper">
-                        <span class = "card-prices__text">Ремонтные услуги</span>
+                        <span class = "card-prices__text card-prices__text--mobile">Ремонтные услуги</span>
                         <span class = "card-prices__text card-prices__text--black">Диагностика</span>
                       </div>
                       <div class = "card-prices__text-wrapper">
-                        <span class = "card-prices__text">Цена</span>
+                        <span class = "card-prices__text card-prices__text--mobile">Цена</span>
                         <span class = "card-prices__text card-prices__text--black">Бесплатно</span>
                       </div>
                       <div class = "card-prices__text-wrapper-bottom">
                         <div class = "card-prices__text-wrapper">
-                          <span class = "card-prices__text">Срок</span>
+                          <span class = "card-prices__text card-prices__text--mobile">Срок</span>
                           <span class = "card-prices__text card-prices__text--black">30 мин</span>
                         </div>
                         <img class = "card-prices__img" src = "./img/order.png">
@@ -458,16 +488,16 @@
                 <div class="swiper-slide card-prices">
                   <a href="#" class="card-prices__link">
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Ремонтные услуги</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Ремонтные услуги</span>
                       <span class = "card-prices__text card-prices__text--black">Замена дисплея</span>
                     </div>
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Цена</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Цена</span>
                       <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                     </div>
                     <div class = "card-prices__text-wrapper-bottom">
                       <div class = "card-prices__text-wrapper">
-                        <span class = "card-prices__text">Срок</span>
+                        <span class = "card-prices__text card-prices__text--mobile">Срок</span>
                         <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
                       </div>
                       <img class = "card-prices__img" src = "./img/order.png">
@@ -477,16 +507,16 @@
                 <div class="swiper-slide card-prices">
                   <a href="#" class="card-prices__link">
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Ремонтные услуги</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Ремонтные услуги</span>
                       <span class = "card-prices__text card-prices__text--black">Замена полифонтческого динамика</span>
                     </div>
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Цена</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Цена</span>
                       <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                     </div>
                     <div class = "card-prices__text-wrapper-bottom">
                       <div class = "card-prices__text-wrapper">
-                        <span class = "card-prices__text">Срок</span>
+                        <span class = "card-prices__text card-prices__text--mobile">Срок</span>
                         <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
                       </div>
                       <img class = "card-prices__img" src = "./img/order.png">
@@ -496,16 +526,16 @@
                 <div class="swiper-slide card-prices">
                   <a href="#" class="card-prices__link">
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Ремонтные услуги</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Ремонтные услуги</span>
                       <span class = "card-prices__text card-prices__text--black">Тестирование с выдачей технического заключения</span>
                     </div>
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Цена</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Цена</span>
                       <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                     </div>
                     <div class = "card-prices__text-wrapper-bottom">
                       <div class = "card-prices__text-wrapper">
-                        <span class = "card-prices__text">Срок</span>
+                        <span class = "card-prices__text card-prices__text--mobile">Срок</span>
                         <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
                       </div>
                       <img class = "card-prices__img" src = "./img/order.png">
@@ -515,16 +545,16 @@
                 <div class="swiper-slide card-prices card-prices-last">
                   <a href="#" class="card-prices__link">
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Ремонтные услуги</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Ремонтные услуги</span>
                       <span class = "card-prices__text card-prices__text--black">Замена программного обеспечения</span>
                     </div>
                     <div class = "card-prices__text-wrapper">
-                      <span class = "card-prices__text">Цена</span>
+                      <span class = "card-prices__text card-prices__text--mobile">Цена</span>
                       <span class = "card-prices__text card-prices__text--black">1000 &#8381;</span>
                     </div>
                     <div class = "card-prices__text-wrapper-bottom">
                       <div class = "card-prices__text-wrapper">
-                        <span class = "card-prices__text">Срок</span>
+                        <span class = "card-prices__text card-prices__text--mobile">Срок</span>
                         <span class = "card-prices__text card-prices__text--black">30-120 мин</span>
                       </div>
                       <img class = "card-prices__img" src = "./img/order.png">
