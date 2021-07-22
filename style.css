@@ -596,9 +596,6 @@ textarea {
   max-height: 1024px;
   min-height: 100vh;
   background-color: #fff; }
-  @media (min-width: 1366px) {
-    .side-menu {
-      min-height: 1024px; } }
 
 .side-menu-header {
   padding: 0;
@@ -845,7 +842,7 @@ h6 {
     .button-tablet {
       display: block; } }
 
-.chat-button {
+.message-button-tablet {
   margin: 0 16px; }
 
 .repair-button {
