@@ -48,6 +48,8 @@ const modalBtnClose = document.querySelector(`.modal-button-close`);
 const modalCall = document.querySelector(`.modal-call`);
 const modalFeedback = document.querySelector(`.modal-feedback`);
 
+const callBtnTab = document.querySelector(`.call-button-tablet`);
+const messageBtnTab = document.querySelector(`.message-button-tablet`);
 
 btnOpen.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -85,7 +87,31 @@ callBtn.addEventListener('click', function (evt) {
 
 });
 
+callBtnTab.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modal.classList.remove(`modal-wrapper--hidden`);
+  sideMenu.classList.add(`side-menu-wrapper--blur`);
+  areaBlur.classList.add(`blur--true`);
+  modalBlur.classList.remove(`modal-overlay--hidden`);
+  modalFeedback.classList.add(`modal-feedback--hidden`);
+  modalCall.classList.remove(`modal-call--hidden`);
+
+});
+
+
+
 messageBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modal.classList.remove(`modal-wrapper--hidden`);
+  sideMenu.classList.add(`side-menu-wrapper--blur`);
+  areaBlur.classList.add(`blur--true`);
+  modalBlur.classList.remove(`modal-overlay--hidden`);
+  modalFeedback.classList.remove(`modal-feedback--hidden`);
+  modalCall.classList.add(`modal-call--hidden`);
+
+});
+
+messageBtnTab.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.remove(`modal-wrapper--hidden`);
   sideMenu.classList.add(`side-menu-wrapper--blur`);
