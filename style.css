@@ -286,7 +286,7 @@
       max-width: 440px; } }
 
 .modal-wrapper--hidden {
-  transform: translateX(100%); }
+  display: none; }
 
 .modal-overlay {
   position: absolute;
@@ -294,7 +294,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2);
   -webkit-filter: blur(5px);
           filter: blur(5px);
@@ -307,7 +307,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 @media (min-width: 1366px) {
   .modal-button-close {
@@ -318,7 +318,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #ffffff; }
+  background-color: #fff; }
+  @media (min-width: 1366px) {
+    .modal-call {
+      position: relative;
+      bottom: 70px; } }
 
 .modal-call--hidden {
   display: none; }
@@ -334,10 +338,18 @@
   font-family: "TTLakes-Bold", sans-serif;
   font-size: 24px;
   line-height: 32px; }
+  @media (min-width: 1366px) {
+    .modal-call-title__text {
+      margin-left: 32px; } }
   .modal-call-title__text:before {
     content: url(./static/highlight.svg);
     position: absolute;
     left: 0; }
+    @media (min-width: 1366px) {
+      .modal-call-title__text:before {
+        content: url(./static/highlight-desktop.svg);
+        position: absolute;
+        left: 0; } }
 
 form {
   margin-top: 16px;
@@ -354,6 +366,9 @@ form {
   margin-top: 16px;
   border: 1px solid #eaeaea;
   border-radius: 8px; }
+  @media (min-width: 1366px) {
+    .modal-call-input {
+      width: 376px; } }
 
 .modal-call-input__message {
   height: 118px; }
@@ -384,6 +399,9 @@ form {
   font-family: "TTLakes-Regular", sans-serif;
   font-size: 14px;
   line-height: 16px; }
+  @media (min-width: 1366px) {
+    .modal-call-submit {
+      margin-left: 32px; } }
 
 .modal-call-submit--link {
   text-decoration: none;
@@ -393,6 +411,9 @@ form {
   align-self: flex-end;
   margin-right: 16px;
   margin-bottom: 338px; }
+  @media (min-width: 1366px) {
+    .modal-call-submit__button {
+      margin-right: 32px; } }
 
 @font-face {
   font-family: "TTLakes-Regular";
@@ -406,36 +427,15 @@ form {
   font-family: "TTLakes-Bold";
   src: url(./fonts/TTLakes-Bold.woff2); }
 
-.modal-feedback-wrapper {
-  max-width: 320px;
-  position: absolute;
-  right: 0;
-  z-index: 4;
-  transition: 1s; }
-
-.modal-feedback-wrapper--hidden {
-  transform: translateX(100%); }
-
-.modal-feedback-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ffffff;
-  box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  z-index: -1; }
-
-.modal-feedback-overlay--hidden {
-  display: none; }
-
 .modal-feedback {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #ffffff; }
+  background-color: #fff; }
+  @media (min-width: 1366px) {
+    .modal-feedback {
+      position: relative;
+      bottom: 70px; } }
 
 .modal-feedback--hidden {
   display: none; }
@@ -451,10 +451,18 @@ form {
   font-family: "TTLakes-Bold", sans-serif;
   font-size: 24px;
   line-height: 32px; }
+  @media (min-width: 1366px) {
+    .modal-feedback-title__text {
+      margin-left: 32px; } }
   .modal-feedback-title__text:before {
     content: url(./static/highlight.svg);
     position: absolute;
     left: 0; }
+    @media (min-width: 1366px) {
+      .modal-feedback-title__text:before {
+        content: url(./static/highlight-desktop.svg);
+        position: absolute;
+        left: 0; } }
 
 form {
   margin-top: 16px;
@@ -471,6 +479,9 @@ form {
   margin-top: 16px;
   border: 1px solid #eaeaea;
   border-radius: 8px; }
+  @media (min-width: 1366px) {
+    .modal-feedback-input {
+      width: 376px; } }
 
 .modal-feedback-input__message {
   height: 118px; }
@@ -504,6 +515,9 @@ textarea {
   font-family: "TTLakes-Regular", sans-serif;
   font-size: 14px;
   line-height: 16px; }
+  @media (min-width: 1366px) {
+    .modal-feedback-submit {
+      margin-left: 32px; } }
 
 .modal-feedback-submit--link {
   text-decoration: none;
@@ -513,6 +527,9 @@ textarea {
   align-self: flex-end;
   margin-right: 16px;
   margin-bottom: 75px; }
+  @media (min-width: 1366px) {
+    .modal-feedback-submit__button {
+      margin-right: 32px; } }
 
 @font-face {
   font-family: "TTLakes-Regular";
@@ -560,7 +577,7 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
   -webkit-filter: blur(5px);
           filter: blur(5px);
@@ -578,7 +595,7 @@ textarea {
   justify-content: space-between;
   max-height: 1024px;
   min-height: 100vh;
-  background-color: #ffffff; }
+  background-color: #fff; }
   @media (min-width: 1366px) {
     .side-menu {
       min-height: 1024px; } }
@@ -968,7 +985,7 @@ li {
 
 .link:hover {
   border: 2px solid #b8ffec;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   padding: 6px 14px; }
 
@@ -1087,7 +1104,7 @@ li {
 
 .gallary-header {
   padding: 16px;
-  background: linear-gradient(to right, #f8f8f8, #ffffff); }
+  background: linear-gradient(to right, #f8f8f8, #fff); }
   @media (min-width: 768px) {
     .gallary-header {
       padding: 24px; } }
@@ -1135,7 +1152,7 @@ li {
   width: 12px;
   height: 12px;
   text-align: center;
-  background: #dddddd; }
+  background: #ddd; }
 
 .swiper-pagination-bullet-active {
   background: #b5b6bc; }
@@ -1190,7 +1207,7 @@ li {
   height: 72px;
   border: #eaeaea solid 1px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: #fff;
   list-style: none; }
   @media (min-width: 768px) {
     .card-brands {
@@ -1235,7 +1252,7 @@ li {
   height: 160px;
   border: #eaeaea solid 1px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: #fff;
   list-style: none; }
   @media (min-width: 768px) {
     .card-repair-type {
@@ -1290,7 +1307,7 @@ li {
   height: 200px;
   border: #eaeaea solid 1px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: #fff;
   list-style: none; }
   @media (min-width: 768px) {
     .card-prices {
@@ -1298,7 +1315,7 @@ li {
       min-width: 100%;
       border: none;
       border-radius: 0;
-      background-image: linear-gradient(to top, #eaeaea 0.1px, rgba(255, 255, 255, 0) 1px);
+      background-image: linear-gradient(to top, #eaeaea 0.1px, #fff 1px);
       background-position: bottom;
       background-size: 95% 25px;
       background-repeat: no-repeat; } }
@@ -1454,6 +1471,7 @@ li {
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .footer {
+  max-width: 1100px;
   border-top: 1px solid #d9fff5;
   display: flex;
   flex-direction: column;
@@ -1491,12 +1509,12 @@ body {
 
 .page-wrapper {
   overflow-x: hidden;
-  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden; }
   @media (min-width: 1366px) {
     .page-wrapper {
+      max-width: 1440px;
       display: grid;
       grid-template-columns: 320px 1fr; } }
 
