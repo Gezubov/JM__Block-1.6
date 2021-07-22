@@ -37,8 +37,10 @@
 }
 
 .modal-button-close {
-  position: relative;
-  right: 100px;
+  @media (min-width: 1366px) {
+    position: relative;
+    right: 100px;
+  }
 }
 .modal-call {
   display: flex;
