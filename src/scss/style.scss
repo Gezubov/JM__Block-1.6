@@ -22,6 +22,7 @@ body {
   background-color: $bgColor_1;
 }
 .page-wrapper {
+  overflow-x: hidden;
   // min-width: 100vw;
   max-width: 1440px;
   margin-right: auto;
@@ -32,13 +33,20 @@ body {
     grid-template-columns: 320px 1fr;
   }
 }
-.blur {
-  // filter: blur(5px);
-  // display: none;
+.content {
   max-width: calc(100-320px);
 }
+.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
 .blur--true {
-  filter: blur(5px);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
 .click {

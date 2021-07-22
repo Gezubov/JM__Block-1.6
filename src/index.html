@@ -8,40 +8,45 @@
     <title>Ремонт техники</title>
 </head>
 <body>
-  <div class="modal-call-wrapper modal-call-wrapper--hidden">
-    <div class="modal-call">
-      <button class=" modal-call-header__button button menu-button-open click" type="button">
-        <img src="./img/btn-burger-open.svg" alt="Меню">
-      </button>
-      <div class="modal-call-title">
-        <h1 class="modal-call-title__text">Заказать звонок</h1>
+
+  <div class="page-wrapper">
+
+    <div class="modal-wrapper modal-wrapper--hidden">
+      <div class="modal-overlay modal-overlay--hidden">
       </div>
-      <form action="#" method="post">
-        <input class="modal-call-input"
-        type="tel" name ="usertel" value="" placeholder="Телефон">
-      </form>
-
-      <span class = "modal-call-submit">
-        Нажимая “отправить”, вы даете согласие на
-        <a href="#" class="modal-call-submit--link">обработку персональных данных</a>
-        и соглашаетесь с нашей
-        <a href="#" class="modal-call-submit--link">политикой конфиденциальности</a>
-      </span>
-      <button class=" modal-call-submit__button button click" type="button">
-        <img src="./img/submit.png" alt="Меню">
-      </button>
-    </div>
-  </div>
-
-  <div class="modal-feedback-wrapper modal-feedback-wrapper--hidden">
-
-    <div class="modal-feedback-overlay">
-    </div>
-
-    <div class="modal-feedback">
-        <button class=" modal-feedback-header__button button menu-button-open click" type="button">
+      <div class="modal">
+        <button class=" modal-header__button button modal-button-close click" type="button">
           <img src="./img/btn-burger-open.svg" alt="Меню">
-      </button>
+        </button>
+
+      <div class="modal-call modal-call--hidden">
+        <div class="modal-call-title">
+          <h1 class="modal-call-title__text">Заказать звонок</h1>
+        </div>
+        <form action="#" method="post">
+          <input class="modal-call-input"
+          type="tel" name ="usertel" value="" placeholder="Телефон">
+        </form>
+
+        <span class = "modal-call-submit">
+          Нажимая “отправить”, вы даете согласие на
+          <a href="#" class="modal-call-submit--link">обработку персональных данных</a>
+          и соглашаетесь с нашей
+          <a href="#" class="modal-call-submit--link">политикой конфиденциальности</a>
+        </span>
+        <button class=" modal-call-submit__button button click" type="button">
+          <img src="./img/submit.png" alt="Меню">
+        </button>
+       </div>
+      </div>
+
+      <!-- <div class="modal-feedback-wrapper modal-feedback-wrapper--hidden"> -->
+
+      <!-- <div class="modal-feedback-overlay modal-feedback-overlay--hidden">
+      </div> -->
+
+      <div class="modal-feedback modal-feedback--hidden">
+
       <div class="modal-feedback-title">
         <h1 class="modal-feedback-title__text">Обратная связь</h1>
       </div>
@@ -67,10 +72,13 @@
       </button>
     </div>
 
-  </div>
-  <div class="page-wrapper">
+  <!-- </div> -->
+
+    </div>
+
+
     <div class="side-menu-wrapper side-menu-wrapper--hidden">
-      <div class="side-menu-overlay">
+      <div class="side-menu-overlay side-menu-overlay--hidden">
       </div>
       <div class="side-menu">
         <header class="side-menu-header">
@@ -122,11 +130,11 @@
 
         <footer class="side-menu-footer">
 
-            <button class="button footer__button click" type="button">
+            <button class="button footer__button call-button click" type="button">
                 <img src="./img/call.svg" alt="Позвонить">
             </button>
 
-            <button class="button footer__button click" type="button">
+            <button class="button footer__button message-button click" type="button">
                 <img src="./img/chat.svg" alt="Открыть чат">
             </button>
 
@@ -158,6 +166,9 @@
       </div>
     </div>
     <div class="blur">
+
+    </div>
+    <div class="content">
       <header class="header">
           <div class="header-left-side">
 
@@ -195,7 +206,6 @@
 
           </div>
       </header>
-      <div class="blur-close">
       <div class="title-wrapper">
 
         <h1 class="title__text">Услуги и сервисы</h1>
@@ -589,6 +599,5 @@
       </footer>
     </div>
   </div>
-</div>
 </body>
 </html>

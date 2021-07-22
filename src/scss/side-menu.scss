@@ -4,19 +4,30 @@
   background-color: #fff;
   position: absolute;
   width: 320px;
-  z-index: 2;
+  z-index: 4;
   min-height: 100vh;
+  transition: 1s;
+  @media (min-width: 768px) {
+    width: 360px;
+  }
   @media (min-width: 1366px) {
+    width: 320px;
+    transition: 0;
     position: relative;
     display: block;
   }
 }
-
+.side-menu-wrapper--blur {
+  transition: 0s;
+  z-index: 2;
+}
 ////////////////скрыть меню///////////
 .side-menu-wrapper--hidden {
-  display: none;
+  transform: translateX(-100%);
+
   @media (min-width: 1366px) {
     display: block;
+    transform: translateX(0);
   }
 }
 ////////////////скрыть меню///////////
@@ -33,6 +44,9 @@
   @media (min-width: 1366px) {
     display: none;
   }
+}
+.side-menu-overlay--hidden {
+  display: none;
 }
 .side-menu {
   display: flex;
