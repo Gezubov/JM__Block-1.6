@@ -98,6 +98,8 @@ messageBtn.addEventListener('click', function (evt) {
 
 modalBtnClose.addEventListener('click', function (evt) {
   evt.preventDefault();
+  sideMenu.classList.add(`side-menu-wrapper--hidden`);
+  menuBlur.classList.add(`side-menu-overlay--hidden`);
   modal.classList.add(`modal-wrapper--hidden`);
   sideMenu.classList.remove(`side-menu-wrapper--blur`);
   modalBlur.classList.add(`modal-overlay--hidden`);

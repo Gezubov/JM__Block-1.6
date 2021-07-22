@@ -25,7 +25,7 @@ li {
 }
 
 .link {
-  color: #7e7e82;
+  color: $color_2;
   font-family: $LakesMedium;
   font-size: 16px;
   line-height: 24px;
@@ -39,8 +39,8 @@ li {
 }
 
 .link:hover {
-  border: 2px solid #b8ffec;
-  background-color: #ffffff;
+  border: 2px solid $blcolor;
+  background-color: $bgColor_2;
   border-radius: 5px;
   padding: 6px 14px;
 }

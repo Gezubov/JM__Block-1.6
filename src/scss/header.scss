@@ -5,7 +5,7 @@
   min-height: 88px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #d9fff5;
+  border-bottom: 1px solid $bordercolor_2;
   padding: 16px;
   @media (min-width: 768px) {
     padding: 24px;
@@ -104,7 +104,7 @@
   }
   .button__text {
     font-family: TTLakes-Regular, sans-serif;
-    color: #1b1c21;
+    color: $color_1;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;

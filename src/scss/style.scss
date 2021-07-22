@@ -24,11 +24,12 @@ body {
 .page-wrapper {
   overflow-x: hidden;
   // min-width: 100vw;
-  max-width: 1440px;
+
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
   @media (min-width: 1366px) {
+    max-width: 1440px;
     display: grid;
     grid-template-columns: 320px 1fr;
   }

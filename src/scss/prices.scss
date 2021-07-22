@@ -3,9 +3,9 @@
 .card-prices {
   width: 260px;
   height: 200px;
-  border: #eaeaea solid 1px;
+  border: $bordercolor_1 solid 1px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $bgColor_2;
   list-style: none;
   @media (min-width: 768px) {
     height: 64px;
@@ -15,8 +15,8 @@
     // box-shadow: 0px 1px 0px 0px #eaeaea inset;
     background-image: linear-gradient(
       to top,
-      #eaeaea 0.1px,
-      rgba(255, 255, 255, 0) 1px
+      $bordercolor_1 0.1px,
+      $bgColor_2 1px
     );
     background-position: bottom;
     background-size: 95% 25px;
@@ -29,7 +29,7 @@
   }
   @media (min-width: 768px) {
     display: block;
-    background-color: #f8f8f8;
+    background-color: $bgColor_1;
     height: 40px;
     background-image: none;
   }
@@ -111,13 +111,13 @@
   font-family: $LakesRegular;
   font-size: 14px;
   line-height: 16px;
-  color: #7e7e82;
+  color: $color_2;
 }
 .card-prices__text--black {
   font-family: $LakesRegular;
   font-size: 14px;
   line-height: 18px;
-  color: #1b1c21;
+  color: $color_1;
 }
 
 .card-prices__img {

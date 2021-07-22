@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-top: 1px solid #d9fff5;
+  border-top: 1px solid $bordercolor_2;
   @media (min-width: 768px) {
     margin-top: 30px;
     max-height: 290px;
@@ -20,7 +20,7 @@
 }
 .gallary-header {
   padding: 16px;
-  background: linear-gradient(to right, #f8f8f8, #ffffff);
+  background: linear-gradient(to right, $bgColor_1, $bgColor_2);
   @media (min-width: 768px) {
     padding: 24px;
   }
@@ -30,7 +30,7 @@
 }
 .gallary-header__title {
   margin: 0;
-  color: #7e7e82;
+  color: $color_2;
   text-transform: uppercase;
   font-family: $LakesRegular;
   font-weight: 400;
@@ -70,10 +70,10 @@
   width: 12px;
   height: 12px;
   text-align: center;
-  background: #dddddd;
+  background: $bgColor_3;
 }
 .swiper-pagination-bullet-active {
-  background: #b5b6bc;
+  background: $bgColor_4;
 }
 /////скрыть/показать///////////
 .button-show,
@@ -96,9 +96,6 @@
 }
 .button.hidden {
   display: none;
-  // @media (min-width: 768px) {
-  //   display: block;
-  // }
 }
 .show {
   display: none;

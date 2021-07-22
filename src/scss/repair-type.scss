@@ -5,9 +5,9 @@
 .card-repair-type {
   width: 240px;
   height: 160px;
-  border: #eaeaea solid 1px;
+  border: $bordercolor_1 solid 1px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $bgColor_2;
   list-style: none;
   @media (min-width: 768px) {
     width: 224px;
@@ -42,7 +42,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: #1b1c21;
+  color: $color_1;
 }
 .card-repair-type__img {
   align-self: flex-end;

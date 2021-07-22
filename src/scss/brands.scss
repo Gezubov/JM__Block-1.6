@@ -7,9 +7,9 @@
 .card-brands {
   width: 240px;
   height: 72px;
-  border: #eaeaea solid 1px;
+  border: $bordercolor_1 solid 1px;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $bgColor_2;
   list-style: none;
   @media (min-width: 768px) {
     width: 224px;
@@ -33,45 +33,3 @@
   align-items: center;
   text-decoration: none;
 }
-
-// @media (min-width: 768px) {
-//   // .gallary {
-//   //   padding: 0;
-//   //   max-height: 200px;
-//   //   overflow: hidden;
-//   // }
-//   .slider--open {
-//     max-height: fit-content;
-//   }
-//   .slider__wrapper {
-//     padding: 24px;
-//     padding-bottom: 0;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//   }
-//   .slider__element {
-//     margin-bottom: 16px;
-//     margin-right: 24px;
-//     width: 224px;
-//     height: 72px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     border: #eaeaea solid 1px;
-//     border-radius: 6px;
-//     background-color: #ffffff;
-//     list-style: none;
-//   }
-//   .show {
-//     display: block;
-//     margin-left: 24px;
-//     margin-bottom: 30px;
-//   }
-//   .button {
-//     padding: 0;
-//     border: none;
-//     background-color: inherit;
-//   }
-// }
