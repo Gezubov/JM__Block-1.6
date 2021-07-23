@@ -42,17 +42,18 @@ areaBlur.addEventListener('click', function (evt) {
 
 callBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
+  modal.classList.remove(`modal-wrapper--none`);
   modal.classList.remove(`modal-wrapper--hidden`);
   sideMenu.classList.add(`side-menu-wrapper--blur`);
   areaBlur.classList.add(`blur--true`);
   modalBlur.classList.remove(`modal-overlay--hidden`);
   modalFeedback.classList.add(`modal-feedback--hidden`);
   modalCall.classList.remove(`modal-call--hidden`);
-
 });
 
 callBtnTab.addEventListener('click', function (evt) {
   evt.preventDefault();
+  modal.classList.remove(`modal-wrapper--none`);
   modal.classList.remove(`modal-wrapper--hidden`);
   sideMenu.classList.add(`side-menu-wrapper--blur`);
   areaBlur.classList.add(`blur--true`);
@@ -66,6 +67,7 @@ callBtnTab.addEventListener('click', function (evt) {
 
 messageBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
+  modal.classList.remove(`modal-wrapper--none`);
   modal.classList.remove(`modal-wrapper--hidden`);
   sideMenu.classList.add(`side-menu-wrapper--blur`);
   areaBlur.classList.add(`blur--true`);
@@ -77,6 +79,7 @@ messageBtn.addEventListener('click', function (evt) {
 
 messageBtnTab.addEventListener('click', function (evt) {
   evt.preventDefault();
+  modal.classList.remove(`modal-wrapper--none`);
   modal.classList.remove(`modal-wrapper--hidden`);
   sideMenu.classList.add(`side-menu-wrapper--blur`);
   areaBlur.classList.add(`blur--true`);

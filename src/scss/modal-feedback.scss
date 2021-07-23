@@ -9,14 +9,11 @@
     position: relative;
     bottom: 70px;
   }
+  &--hidden {
+    display: none;
+  }
 }
-.modal-feedback--hidden {
-  display: none;
-}
-.modal-feedback-header__button {
-  align-self: flex-start;
-  margin: 24px 0 40px 16px;
-}
+
 .modal-feedback-title__text {
   display: block;
   margin-left: 16px;
@@ -38,11 +35,7 @@
     }
   }
 }
-form {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-}
+
 .modal-feedback-input {
   font-family: $LakesRegular;
   font-size: 16px;
@@ -64,11 +57,6 @@ form {
 textarea {
   resize: none;
 }
-::placeholder {
-  font-family: $LakesRegular;
-  font-size: 16px;
-  width: 100%;
-}
 .modal-feedback-submit {
   max-width: 85%;
   margin: 16px;
@@ -86,7 +74,6 @@ textarea {
 .modal-feedback-submit__button {
   align-self: flex-end;
   margin-right: 16px;
-  margin-bottom: 75px;
   @media (min-width: 1366px) {
     margin-right: 32px;
   }

@@ -2,6 +2,7 @@
 @import "../../node_modules/swiper/components/pagination/pagination.scss";
 @import "vars.scss";
 
+@import "modal.scss";
 @import "modal-call.scss";
 @import "modal-feedback.scss";
 @import "side-menu.scss";
@@ -22,7 +23,7 @@ body {
   background-color: $bgColor_1;
 }
 .page-wrapper {
-  overflow-x: hidden;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;

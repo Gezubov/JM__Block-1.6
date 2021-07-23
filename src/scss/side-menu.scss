@@ -2,10 +2,10 @@
 
 .side-menu-wrapper {
   background-color: $bgColor_2;
+  min-height: 100vh;
   position: absolute;
   width: 320px;
   z-index: 4;
-  min-height: 100vh;
   transition: 1s;
   @media (min-width: 768px) {
     width: 360px;
@@ -16,11 +16,12 @@
     position: relative;
     display: block;
   }
+  &--blur {
+    transition: 0s;
+    z-index: 2;
+  }
 }
-.side-menu-wrapper--blur {
-  transition: 0s;
-  z-index: 2;
-}
+
 ////////////////скрыть меню///////////
 .side-menu-wrapper--hidden {
   transform: translateX(-100%);

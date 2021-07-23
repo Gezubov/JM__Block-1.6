@@ -15,60 +15,58 @@
       <div class="modal-overlay modal-overlay--hidden">
       </div>
       <div class="modal">
-        <button tabindex="6" class="modal-button-close button click" type="button">
+        <button tabindex="6" class="modal-button-close modal-button-close--hidden button click" type="button">
           <img src="./img/btn-burger-open.svg" alt="Меню">
         </button>
 
-      <div class="modal-call modal-call--hidden">
-        <div class="modal-call-title">
-          <h1 class="modal-call-title__text">Заказать звонок</h1>
+        <div class="modal-call modal-call--hidden">
+          <div class="modal-call-title">
+            <h1 class="modal-call-title__text">Заказать звонок</h1>
+          </div>
+          <form action="#" method="post">
+            <input tabindex="1" class="modal-call-input"
+            type="tel" name ="usertel" value="" placeholder="Телефон">
+          </form>
+
+          <span class = "modal-call-submit">
+            Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-call-submit--link">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a href="#" class="modal-call-submit--link">политикой конфиденциальности</a>
+          </span>
+          <button tabindex="2" class=" modal-call-submit__button button click" type="button">
+            <img src="./img/submit.png" alt="Меню">
+          </button>
         </div>
-        <form action="#" method="post">
-          <input tabindex="1" class="modal-call-input"
-          type="tel" name ="usertel" value="" placeholder="Телефон">
-        </form>
 
-        <span class = "modal-call-submit">
-          Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="modal-call-submit--link">обработку персональных данных</a>
-          и соглашаетесь с нашей
-          <a href="#" class="modal-call-submit--link">политикой конфиденциальности</a>
-        </span>
-        <button tabindex="2" class=" modal-call-submit__button button click" type="button">
-          <img src="./img/submit.png" alt="Меню">
-        </button>
-       </div>
+        <div class="modal-feedback modal-feedback--hidden">
+
+          <div class="modal-feedback-title">
+            <h1 class="modal-feedback-title__text">Обратная связь</h1>
+          </div>
+          <form action="#" method="post">
+
+            <input tabindex="1" class="modal-feedback-input"
+            type="text" name ="username" value="" placeholder="Имя">
+            <input tabindex="2" class="modal-feedback-input"
+            type="tel" name ="usertel" value="" placeholder="Телефон">
+            <input tabindex="3" class="modal-feedback-input"
+            type="email" name ="usermail" value=""placeholder="Электронная почта">
+            <textarea tabindex="4" class="modal-feedback-input modal-feedback-input__message" cols = "33" rows = "5" name ="Message" value="" placeholder="Сообщение"></textarea>
+          </form>
+
+          <span class = "modal-feedback-submit">
+            Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-feedback-submit--link">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a href="#" class="modal-feedback-submit--link">политикой конфиденциальности</a>
+          </span>
+          <button tabindex="5" class=" modal-feedback-submit__button button click" type="button">
+            <img src="./img/submit.png" alt="Меню">
+          </button>
+        </div>
       </div>
-
-      <div class="modal-feedback modal-feedback--hidden">
-
-      <div class="modal-feedback-title">
-        <h1 class="modal-feedback-title__text">Обратная связь</h1>
-      </div>
-      <form action="#" method="post">
-
-        <input tabindex="1" class="modal-feedback-input"
-        type="text" name ="username" value="" placeholder="Имя">
-        <input tabindex="2" class="modal-feedback-input"
-        type="tel" name ="usertel" value="" placeholder="Телефон">
-        <input tabindex="3" class="modal-feedback-input"
-        type="email" name ="usermail" value=""placeholder="Электронная почта">
-        <textarea tabindex="4" class="modal-feedback-input modal-feedback-input__message" cols = "33" rows = "5" name ="Message" value="" placeholder="Сообщение"></textarea>
-      </form>
-
-      <span class = "modal-feedback-submit">
-        Нажимая “отправить”, вы даете согласие на
-        <a href="#" class="modal-feedback-submit--link">обработку персональных данных</a>
-        и соглашаетесь с нашей
-        <a href="#" class="modal-feedback-submit--link">политикой конфиденциальности</a>
-      </span>
-      <button tabindex="5" class=" modal-feedback-submit__button button click" type="button">
-        <img src="./img/submit.png" alt="Меню">
-      </button>
     </div>
-
-    </div>
-
 
     <div class="side-menu-wrapper side-menu-wrapper--hidden">
       <div class="side-menu-overlay side-menu-overlay--hidden">
@@ -121,46 +119,47 @@
 
         </div>
 
-        <footer class="side-menu-footer">
+      <footer class="side-menu-footer">
 
-            <button class="button footer__button call-button click" type="button">
-                <img src="./img/call.svg" alt="Позвонить">
-            </button>
+          <button class="button footer__button call-button click" type="button">
+              <img src="./img/call.svg" alt="Позвонить">
+          </button>
 
-            <button class="button footer__button message-button click" type="button">
-                <img src="./img/chat.svg" alt="Открыть чат">
-            </button>
+          <button class="button footer__button message-button click" type="button">
+              <img src="./img/chat.svg" alt="Открыть чат">
+          </button>
 
-            <button class="button footer__button click" type="button">
-                <img src="./img/profile.svg" alt="Открыть профиль">
-            </button>
+          <button class="button footer__button click" type="button">
+              <img src="./img/profile.svg" alt="Открыть профиль">
+          </button>
 
-            <div class="contacts">
-                <a class="contacts__mail click" href="mailto:mail@cps.com">mail@cps.com</a>
-                <a class="contacts__phone click" href="tel:+88008908900">8 800 890 8900</a>
-            </div>
+          <div class="contacts">
+              <a class="contacts__mail click" href="mailto:mail@cps.com">mail@cps.com</a>
+              <a class="contacts__phone click" href="tel:+88008908900">8 800 890 8900</a>
+          </div>
 
-            <div class="lang">
-                <button class="button footer__button lang__button lang__button--active click" type="button">
-                    <p>RU</p>
-                </button>
+          <div class="lang">
+              <button class="button footer__button lang__button lang__button--active click" type="button">
+                  <p>RU</p>
+              </button>
 
-                <button class="button footer__button lang__button click" type="button">
-                    <p>EN</p>
-                </button>
+              <button class="button footer__button lang__button click" type="button">
+                  <p>EN</p>
+              </button>
 
-                <button class="button footer__button lang__button click" type="button">
-                    <p>CH</p>
-                </button>
+              <button class="button footer__button lang__button click" type="button">
+                  <p>CH</p>
+              </button>
 
-            </div>
+          </div>
 
-        </footer>
-      </div>
+      </footer>
     </div>
+    </div>
+
     <div class="blur">
-
     </div>
+
     <div class="content">
       <header class="header">
           <div class="header-left-side">

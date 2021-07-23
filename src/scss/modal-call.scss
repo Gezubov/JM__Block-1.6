@@ -1,48 +1,5 @@
 @import "vars.scss";
 
-.modal-wrapper {
-  max-width: 320px;
-  min-height: 100vh;
-  position: absolute;
-  right: 0;
-  z-index: 4;
-  transition: 1s;
-  @media (min-width: 1366px) {
-    max-width: 440px;
-  }
-  &--hidden {
-    display: none;
-  }
-}
-
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: $bgColor_2;
-  box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2);
-  filter: blur(5px);
-  z-index: -1;
-  &--hidden {
-    display: none;
-  }
-}
-.modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: $bgColor_2;
-}
-.modal-button-close {
-  align-self: flex-start;
-  margin: 24px 0 40px 16px;
-  @media (min-width: 1366px) {
-    position: relative;
-    right: 100px;
-  }
-}
 .modal-call {
   display: flex;
   flex-direction: column;
@@ -60,7 +17,7 @@
 .modal-call-title__text {
   display: block;
   margin-left: 16px;
-  color: #1b1c21;
+  color: $color_1;
   font-family: $LakesBold;
   font-size: 24px;
   line-height: 32px;
@@ -78,11 +35,7 @@
     }
   }
 }
-form {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-}
+
 .modal-call-input {
   font-family: $LakesRegular;
   font-size: 16px;
@@ -102,11 +55,6 @@ form {
   height: 118px;
 }
 
-::placeholder {
-  font-family: $LakesRegular;
-  font-size: 16px;
-  width: 100%;
-}
 .modal-call-submit {
   max-width: 85%;
   margin: 16px;
@@ -124,7 +72,6 @@ form {
 .modal-call-submit__button {
   align-self: flex-end;
   margin-right: 16px;
-  margin-bottom: 338px;
   @media (min-width: 1366px) {
     margin-right: 32px;
   }
