@@ -15,7 +15,7 @@
       <div class="modal-overlay modal-overlay--hidden">
       </div>
       <div class="modal">
-        <button class=" modal-header__button button modal-button-close click" type="button">
+        <button tabindex="6" class="modal-button-close button click" type="button">
           <img src="./img/btn-burger-open.svg" alt="Меню">
         </button>
 
@@ -24,7 +24,7 @@
           <h1 class="modal-call-title__text">Заказать звонок</h1>
         </div>
         <form action="#" method="post">
-          <input class="modal-call-input"
+          <input tabindex="1" class="modal-call-input"
           type="tel" name ="usertel" value="" placeholder="Телефон">
         </form>
 
@@ -34,16 +34,11 @@
           и соглашаетесь с нашей
           <a href="#" class="modal-call-submit--link">политикой конфиденциальности</a>
         </span>
-        <button class=" modal-call-submit__button button click" type="button">
+        <button tabindex="2" class=" modal-call-submit__button button click" type="button">
           <img src="./img/submit.png" alt="Меню">
         </button>
        </div>
       </div>
-
-      <!-- <div class="modal-feedback-wrapper modal-feedback-wrapper--hidden"> -->
-
-      <!-- <div class="modal-feedback-overlay modal-feedback-overlay--hidden">
-      </div> -->
 
       <div class="modal-feedback modal-feedback--hidden">
 
@@ -52,13 +47,13 @@
       </div>
       <form action="#" method="post">
 
-        <input class="modal-feedback-input"
+        <input tabindex="1" class="modal-feedback-input"
         type="text" name ="username" value="" placeholder="Имя">
-        <input class="modal-feedback-input"
+        <input tabindex="2" class="modal-feedback-input"
         type="tel" name ="usertel" value="" placeholder="Телефон">
-        <input class="modal-feedback-input"
+        <input tabindex="3" class="modal-feedback-input"
         type="email" name ="usermail" value=""placeholder="Электронная почта">
-        <textarea class="modal-feedback-input modal-feedback-input__message" cols = "33" rows = "5" name ="Message" value="" placeholder="Сообщение"></textarea>
+        <textarea tabindex="4" class="modal-feedback-input modal-feedback-input__message" cols = "33" rows = "5" name ="Message" value="" placeholder="Сообщение"></textarea>
       </form>
 
       <span class = "modal-feedback-submit">
@@ -67,12 +62,10 @@
         и соглашаетесь с нашей
         <a href="#" class="modal-feedback-submit--link">политикой конфиденциальности</a>
       </span>
-      <button class=" modal-feedback-submit__button button click" type="button">
+      <button tabindex="5" class=" modal-feedback-submit__button button click" type="button">
         <img src="./img/submit.png" alt="Меню">
       </button>
     </div>
-
-  <!-- </div> -->
 
     </div>
 
@@ -99,7 +92,7 @@
 
             <nav>
                 <menu class="side-navigation">
-                    <li class="side-navigation__list side-navigation__list--active click">
+                    <li class="side-navigation__list click">
                       <a href="#" class="side-navigation__link side-navigation__link--active">Ремонт техники</a>
                     </li>
                     <li class="side-navigation__list click">
@@ -225,12 +218,24 @@
       </div>
       <nav>
         <menu class="navigation">
-            <li><a href="#" class="link">Ремонтируемые бренды</a></li>
-            <li><a href="#" class="link">Ремонтируемые устройства</a></li>
-            <li><a href="#" class="link">Цены на услуги</a></li>
-            <li><a href="#" class="link">Адреса сервисных центров</a></li>
-            <li><a href="#" class="link">Специальные цены</a></li>
-            <li><a href="#" class="link">Отзывы</a></li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link navigation__link--active">Ремонтируемые бренды</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Ремонтируемые устройства</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Цены на услуги</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Адреса сервисных центров</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Специальные цены</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Отзывы</a>
+            </li>
         </menu>
       </nav>
       <main class="main">
@@ -269,81 +274,69 @@
 
           <div class="swiper-container cards-container">
 
-              <div class="swiper-wrapper cards-wrapper">
+            <div class="swiper-wrapper cards-wrapper card-brands-wrapper">
 
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/lenovo.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/samsung.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/apple.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/veiwsonic.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/bosh.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/hp.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/acer.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/sony.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/lenovo.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/samsung.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-                  <div class="swiper-slide card-brands">
-                      <a href="#" class="card-brands__link">
-                          <img src = "./img/brands/apple.png">
-                          <img src = "./img/icons/go.svg">
-                      </a>
-                  </div>
-
-              </div>
-
-              <div class="swiper-pagination"></div>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/lenovo.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/samsung.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/apple.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/veiwsonic.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/bosh.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/hp.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/acer.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/sony.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/lenovo.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/samsung.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+              <a href="#" class="swiper-slide card-brands">
+                <div class="card-brands__overlay"></div>
+                <img src = "./img/brands/apple.png">
+                <img src = "./img/icons/go.svg">
+              </a>
+            </div>
+            <div class="swiper-pagination">
+            </div>
           </div>
 
-          <div class="show">
+          <div class="showCards">
               <button class="button-show button-show-brands button click" type="button">
                   <img class = "button__img" src="./img/icons/show.svg">
                   <span class = "button__text">Показать все</span>
@@ -436,7 +429,7 @@
               <div class="swiper-pagination"></div>
           </div>
 
-          <div class="show">
+          <div class="showCards">
               <button class="button-show button-show-repair-type button click" type="button">
                   <img class = "button__img" src="./img/icons/show.svg">
                   <span class = "button__text">Показать все</span>
@@ -473,9 +466,6 @@
                     </div>
                   </div>
                 </div>
-
-
-
 
                 <div class="swiper-slide card-prices card-prices-first">
                     <a href="#" class="card-prices__link">
@@ -578,15 +568,15 @@
           </div>
         </div>
 
-        <article class="comm">
-          <p class="comm__text">Все цены указаны с учетом НДС.
+        <article class="commercial">
+          <p class="commercial__text">Все цены указаны с учетом НДС.
             Стоимость ремонта указана на единичную услугу. Для
             получения коммерческого предложения на постоянное обслуживание,
             оставьте заявку.
           </p>
-          <a href="#" class="comm-make-order">
-            <span class="comm-make-order__text">Получить коммерческое предложение</span>
-            <img class="comm-make-order__btn" src="./img/icons/more.svg" alt="Читать далее">
+          <a href="#" class="commercial-make-order">
+            <span class="commercial-make-order__text">Получить коммерческое предложение</span>
+            <img class="commercial-make-order__btn" src="./img/icons/more.svg" alt="Читать далее">
 
           </a>
         </article>

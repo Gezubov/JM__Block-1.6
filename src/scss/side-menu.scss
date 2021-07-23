@@ -121,6 +121,7 @@ menu {
     }
   }
   &:hover {
+    transition: 1s;
     color: $color_2;
   }
 }

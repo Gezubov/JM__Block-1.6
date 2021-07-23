@@ -15,7 +15,7 @@
 @import "brands.scss";
 @import "repair-type.scss";
 @import "prices.scss";
-@import "comm.scss";
+@import "commercial.scss";
 @import "footer.scss";
 
 body {
@@ -23,8 +23,6 @@ body {
 }
 .page-wrapper {
   overflow-x: hidden;
-  // min-width: 100vw;
-
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
@@ -42,14 +40,13 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
+  &--true {
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
 }
-.blur--true {
-  backdrop-filter: blur(5px);
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-}
-
 .click {
   cursor: pointer;
 }

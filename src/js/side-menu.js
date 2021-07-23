@@ -1,39 +1,3 @@
-
-// const showHide = (contentClass,btnOpenClass,btnCloseClass,area,blur,closeArea) =>{
-//   const content = document.querySelector(`.${contentClass}`);
-//   const btnOpen = document.querySelector(`.${btnOpenClass}`);
-//   const btnClose = document.querySelector(`.${btnCloseClass}`);
-//   const areaBlur= document.querySelector(`.${area}`);
-//   const menuBlur= document.querySelector(`.${blur}`);
-//   const areaClose= document.querySelector(`.${closeArea}`);
-
-
-//   btnOpen.addEventListener('click', function (evt) {
-//       evt.preventDefault();
-//       content.classList.remove(`${contentClass}--hidden`);
-//       menuBlur.classList.remove(`${blur}--hidden`);
-//       areaBlur.classList.add(`${area}--true`);
-//   });
-//   btnClose.addEventListener('click', function (evt) {
-//       evt.preventDefault();
-//       content.classList.add(`${contentClass}--hidden`);
-//       menuBlur.classList.add(`${blur}--hidden`);
-//       areaBlur.classList.remove(`${area}--true`);
-
-//   });
-//   areaClose.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     content.classList.add(`${contentClass}--hidden`);
-//     menuBlur.classList.add(`${blur}--hidden`);
-//     areaBlur.classList.remove(`${area}--true`);
-// });
-// }
-
-// showHide('side-menu-wrapper','menu-button','menu-button-close','blur','side-menu-overlay','blur');
-
-// showHide('modal-call-wrapper','call-button','menu-button-close','blur','side-menu-overlay','blur-close');
-
-
 const sideMenu = document.querySelector(`.side-menu-wrapper`);
 const btnOpen = document.querySelector(`.menu-button`);
 const btnClose = document.querySelector(`.menu-button-close`);

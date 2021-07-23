@@ -20,11 +20,11 @@ menu {
   }
 }
 
-li {
+.navigation__list-item {
   list-style-type: none;
 }
 
-.link {
+.navigation__link {
   color: $color_2;
   font-family: $LakesMedium;
   font-size: 16px;
@@ -33,14 +33,21 @@ li {
   margin-left: 16px;
   text-decoration: none;
   padding: 8px 16px;
+  border: none;
+  &--active {
+    border: 2px solid $blcolor;
+    background-color: $bgColor_2;
+    border-radius: 5px;
+    padding: 6px 14px;
+  }
+  &:hover {
+    transition: ease-out 1s;
+    border: 2px solid $blcolor;
+    background-color: $bgColor_2;
+    border-radius: 5px;
+    padding: 6px 14px;
+  }
   @media (min-width: 768px) {
     margin-left: 24px;
   }
-}
-
-.link:hover {
-  border: 2px solid $blcolor;
-  background-color: $bgColor_2;
-  border-radius: 5px;
-  padding: 6px 14px;
 }
