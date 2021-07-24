@@ -278,15 +278,17 @@
   max-width: 320px;
   min-height: 100vh;
   position: absolute;
+  display: flex;
   right: 0;
   z-index: 4;
   transition: 1s; }
   @media (min-width: 1366px) {
     .modal-wrapper {
       max-width: 440px; } }
-
-.modal-wrapper--hidden {
-  display: none; }
+  .modal-wrapper--hidden {
+    transform: translateX(300%); }
+  .modal-wrapper--none {
+    display: none; }
 
 .modal-overlay {
   position: absolute;
@@ -299,9 +301,8 @@
   -webkit-filter: blur(5px);
           filter: blur(5px);
   z-index: -1; }
-
-.modal-overlay--hidden {
-  display: none; }
+  .modal-overlay--hidden {
+    display: none; }
 
 .modal {
   display: flex;
@@ -309,69 +310,18 @@
   justify-content: flex-start;
   background-color: #fff; }
 
-@media (min-width: 1366px) {
-  .modal-button-close {
-    position: relative;
-    right: 100px; } }
-
-.modal-call {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #fff; }
-  @media (min-width: 1366px) {
-    .modal-call {
-      position: relative;
-      bottom: 70px; } }
-
-.modal-call--hidden {
-  display: none; }
-
-.modal-header__button {
+.modal-button-close {
   align-self: flex-start;
   margin: 24px 0 40px 16px; }
-
-.modal-call-title__text {
-  display: block;
-  margin-left: 16px;
-  color: #1b1c21;
-  font-family: "TTLakes-Bold", sans-serif;
-  font-size: 24px;
-  line-height: 32px; }
   @media (min-width: 1366px) {
-    .modal-call-title__text {
-      margin-left: 32px; } }
-  .modal-call-title__text:before {
-    content: url(./static/highlight.svg);
-    position: absolute;
-    left: 0; }
-    @media (min-width: 1366px) {
-      .modal-call-title__text:before {
-        content: url(./static/highlight-desktop.svg);
-        position: absolute;
-        left: 0; } }
+    .modal-button-close {
+      position: relative;
+      right: 100px; } }
 
 form {
   margin-top: 16px;
   display: flex;
   flex-direction: column; }
-
-.modal-call-input {
-  font-family: "TTLakes-Regular", sans-serif;
-  font-size: 16px;
-  align-self: center;
-  width: 288px;
-  height: 48px;
-  padding: 12px;
-  margin-top: 16px;
-  border: 1px solid #eaeaea;
-  border-radius: 8px; }
-  @media (min-width: 1366px) {
-    .modal-call-input {
-      width: 376px; } }
-
-.modal-call-input__message {
-  height: 118px; }
 
 ::-webkit-input-placeholder {
   font-family: "TTLakes-Regular", sans-serif;
@@ -393,6 +343,67 @@ form {
   font-size: 16px;
   width: 100%; }
 
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url(./fonts/TTLakes-Regular.woff2); }
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url(./fonts/TTLakes-Medium.woff2); }
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url(./fonts/TTLakes-Bold.woff2); }
+
+.modal-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff; }
+  @media (min-width: 1366px) {
+    .modal-call {
+      position: relative;
+      bottom: 70px; } }
+  .modal-call--hidden {
+    display: none; }
+
+.modal-call-title__text {
+  display: block;
+  margin-left: 16px;
+  color: #1b1c21;
+  font-family: "TTLakes-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 32px; }
+  @media (min-width: 1366px) {
+    .modal-call-title__text {
+      margin-left: 32px; } }
+  .modal-call-title__text:before {
+    content: url(./static/highlight.svg);
+    position: absolute;
+    left: 0; }
+    @media (min-width: 1366px) {
+      .modal-call-title__text:before {
+        content: url(./static/highlight-desktop.svg);
+        position: absolute;
+        left: 0; } }
+
+.modal-call-input {
+  font-family: "TTLakes-Regular", sans-serif;
+  font-size: 16px;
+  align-self: center;
+  width: 288px;
+  height: 48px;
+  padding: 12px;
+  margin-top: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px; }
+  @media (min-width: 1366px) {
+    .modal-call-input {
+      width: 376px; } }
+
+.modal-call-input__message {
+  height: 118px; }
+
 .modal-call-submit {
   max-width: 85%;
   margin: 16px;
@@ -409,8 +420,7 @@ form {
 
 .modal-call-submit__button {
   align-self: flex-end;
-  margin-right: 16px;
-  margin-bottom: 338px; }
+  margin-right: 16px; }
   @media (min-width: 1366px) {
     .modal-call-submit__button {
       margin-right: 32px; } }
@@ -436,13 +446,8 @@ form {
     .modal-feedback {
       position: relative;
       bottom: 70px; } }
-
-.modal-feedback--hidden {
-  display: none; }
-
-.modal-feedback-header__button {
-  align-self: flex-start;
-  margin: 24px 0 40px 16px; }
+  .modal-feedback--hidden {
+    display: none; }
 
 .modal-feedback-title__text {
   display: block;
@@ -464,11 +469,6 @@ form {
         position: absolute;
         left: 0; } }
 
-form {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column; }
-
 .modal-feedback-input {
   font-family: "TTLakes-Regular", sans-serif;
   font-size: 16px;
@@ -489,26 +489,6 @@ form {
 textarea {
   resize: none; }
 
-::-webkit-input-placeholder {
-  font-family: "TTLakes-Regular", sans-serif;
-  font-size: 16px;
-  width: 100%; }
-
-::-moz-placeholder {
-  font-family: "TTLakes-Regular", sans-serif;
-  font-size: 16px;
-  width: 100%; }
-
-:-ms-input-placeholder {
-  font-family: "TTLakes-Regular", sans-serif;
-  font-size: 16px;
-  width: 100%; }
-
-::placeholder {
-  font-family: "TTLakes-Regular", sans-serif;
-  font-size: 16px;
-  width: 100%; }
-
 .modal-feedback-submit {
   max-width: 85%;
   margin: 16px;
@@ -525,8 +505,7 @@ textarea {
 
 .modal-feedback-submit__button {
   align-self: flex-end;
-  margin-right: 16px;
-  margin-bottom: 75px; }
+  margin-right: 16px; }
   @media (min-width: 1366px) {
     .modal-feedback-submit__button {
       margin-right: 32px; } }
@@ -545,10 +524,10 @@ textarea {
 
 .side-menu-wrapper {
   background-color: #fff;
+  min-height: 100vh;
   position: absolute;
   width: 320px;
   z-index: 4;
-  min-height: 100vh;
   transition: 1s; }
   @media (min-width: 768px) {
     .side-menu-wrapper {
@@ -559,10 +538,9 @@ textarea {
       transition: 0;
       position: relative;
       display: block; } }
-
-.side-menu-wrapper--blur {
-  transition: 0s;
-  z-index: 2; }
+  .side-menu-wrapper--blur {
+    transition: 0s;
+    z-index: 2; }
 
 .side-menu-wrapper--hidden {
   transform: translateX(-100%); }
@@ -652,6 +630,7 @@ menu {
       position: absolute;
       left: 0; }
   .side-navigation__link:hover {
+    transition: 1s;
     color: #7e7e82; }
 
 .side-menu-footer {
@@ -855,34 +834,6 @@ h6 {
 .check-status-button {
   margin-left: 16px; }
 
-@media (min-width: 1366px) {
-  .header {
-    display: none; }
-  .cps-photo {
-    width: 531px;
-    margin-top: 24px;
-    margin-right: 24px;
-    border-radius: 5px; }
-  .navigation {
-    min-height: 75px;
-    margin-left: 20px;
-    justify-content: flex-start;
-    flex-wrap: wrap; }
-  .link {
-    margin: 0; }
-  .title-button {
-    display: flex;
-    align-items: center;
-    margin-left: 24px; }
-  .button__text {
-    font-family: TTLakes-Regular, sans-serif;
-    color: #1b1c21;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600; }
-  .button__image {
-    margin-left: 8px; } }
-
 @font-face {
   font-family: "TTLakes-Regular";
   src: url(./fonts/TTLakes-Regular.woff2); }
@@ -933,6 +884,14 @@ h6 {
         top: 8px;
         left: -33px; } }
 
+.title-button {
+  display: flex; }
+
+.title-button__text {
+  align-self: center;
+  margin-right: 8px;
+  margin-left: 32px; }
+
 @font-face {
   font-family: "TTLakes-Regular";
   src: url(./fonts/TTLakes-Regular.woff2); }
@@ -964,10 +923,10 @@ menu {
       overflow: hidden;
       max-width: 1100px; } }
 
-li {
+.navigation__list-item {
   list-style-type: none; }
 
-.link {
+.navigation__link {
   color: #7e7e82;
   font-family: "TTLakes-Medium", sans-serif;
   font-size: 16px;
@@ -975,16 +934,22 @@ li {
   white-space: nowrap;
   margin-left: 16px;
   text-decoration: none;
-  padding: 8px 16px; }
+  padding: 8px 16px;
+  border: none; }
+  .navigation__link--active {
+    border: 2px solid #b8ffec;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 6px 14px; }
+  .navigation__link:hover {
+    transition: ease-out 1s;
+    border: 2px solid #b8ffec;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 6px 14px; }
   @media (min-width: 768px) {
-    .link {
+    .navigation__link {
       margin-left: 24px; } }
-
-.link:hover {
-  border: 2px solid #b8ffec;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 6px 14px; }
 
 @font-face {
   font-family: "TTLakes-Regular";
@@ -1176,10 +1141,10 @@ li {
 .button.hidden {
   display: none; }
 
-.show {
+.showCards {
   display: none; }
   @media (min-width: 768px) {
-    .show {
+    .showCards {
       display: block; } }
 
 @font-face {
@@ -1200,12 +1165,17 @@ li {
   max-height: fit-content; }
 
 .card-brands {
+  position: relative;
   width: 240px;
   height: 72px;
-  border: #eaeaea solid 1px;
   border-radius: 6px;
   background-color: #fff;
-  list-style: none; }
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none; }
   @media (min-width: 768px) {
     .card-brands {
       width: 224px;
@@ -1217,15 +1187,24 @@ li {
       margin-right: 30px;
       margin-bottom: 16px; } }
 
-.card-brands__link {
-  padding: 16px;
+.card-brands__overlay {
+  background-color: transparent;
+  position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none; }
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border: #eaeaea solid 1px;
+  border-radius: 6px; }
+  .card-brands__overlay--active {
+    transition: ease-out 1s;
+    border: 2px solid #b8ffec;
+    border-radius: 5px; }
+  .card-brands__overlay:hover {
+    transition: ease-out 1s;
+    border: 2px solid #b8ffec;
+    border-radius: 5px; }
 
 @font-face {
   font-family: "TTLakes-Regular";
@@ -1299,66 +1278,86 @@ li {
   font-family: "TTLakes-Bold";
   src: url(./fonts/TTLakes-Bold.woff2); }
 
+.table-prices {
+  display: none;
+  max-width: 970px;
+  margin: 31px 24px;
+  font-family: "TTLakes-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-collapse: collapse;
+  text-align: left;
+  color: #1b1c21; }
+  @media (min-width: 768px) {
+    .table-prices {
+      display: table; } }
+  @media (min-width: 1366px) {
+    .table-prices {
+      max-width: 1100px; } }
+
+.table-prices__head {
+  background-color: transparent;
+  color: #7e7e82;
+  font-weight: normal;
+  line-height: 16px; }
+
+.table-prices__body {
+  background-color: #fff;
+  border-radius: 6px; }
+
+.table-prices__head-data {
+  padding-top: 31px;
+  padding-bottom: 16px; }
+
+.table-prices__data {
+  padding: 23px 0;
+  border-bottom: #eaeaea 1px solid;
+  border-width: 90%; }
+
+.col-4 {
+  text-align: right; }
+
+.col-none {
+  width: 16px; }
+  @media (min-width: 1366px) {
+    .col-none {
+      width: 24px; } }
+
+.row-bottom {
+  border-bottom: none; }
+
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url(./fonts/TTLakes-Regular.woff2); }
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url(./fonts/TTLakes-Medium.woff2); }
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url(./fonts/TTLakes-Bold.woff2); }
+
+.cards-container-prices {
+  padding: 16px;
+  width: 100vw;
+  min-height: 260px; }
+  @media (min-width: 768px) {
+    .cards-container-prices {
+      display: none; } }
+
 .card-prices {
   width: 260px;
   height: 200px;
   border: #eaeaea solid 1px;
   border-radius: 6px;
   background-color: #fff;
-  list-style: none; }
-  @media (min-width: 768px) {
-    .card-prices {
-      height: 64px;
-      min-width: 100%;
-      border: none;
-      border-radius: 0;
-      background-image: linear-gradient(to top, #eaeaea 0.1px, #fff 1px);
-      background-position: bottom;
-      background-size: 95% 25px;
-      background-repeat: no-repeat; } }
-
-@media (min-width: 320px) {
-  .card-prices-top {
-    display: none; } }
-
-@media (min-width: 768px) {
-  .card-prices-top {
-    display: block;
-    background-color: #f8f8f8;
-    height: 40px;
-    background-image: none; } }
-
-@media (min-width: 768px) {
-  .card-prices__text--mobile {
-    display: none; } }
-
-@media (min-width: 768px) {
-  .card-prices-first {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border: none; } }
-
-@media (min-width: 768px) {
-  .card-prices-last {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border: none;
-    background-image: none; } }
-
-.card-prices__link {
+  list-style: none;
   padding: 16px;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-decoration: none; }
-  @media (min-width: 768px) {
-    .card-prices__link {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 350px 1fr 2fr;
-      gap: 0; } }
 
 .card-prices__text-wrapper {
   display: flex;
@@ -1371,33 +1370,12 @@ li {
   justify-content: space-between;
   align-items: center; }
 
-@media (min-width: 768px) {
-  .cards-wrapper-prices {
-    flex-direction: column;
-    max-width: 1100px; } }
-
-@media (min-width: 1366px) {
-  .cards-wrapper-prices {
-    flex-direction: column;
-    max-width: 1100px; } }
-
-.cards-container-prices {
-  padding: 16px;
-  width: 100vw;
-  min-height: 260px; }
-  @media (min-width: 768px) {
-    .cards-container-prices {
-      min-height: 400px;
-      padding: 24px; } }
-  @media (min-width: 1366px) {
-    .cards-container-prices {
-      padding-left: 35px; } }
-
 .card-prices__text {
   font-family: "TTLakes-Regular", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #7e7e82; }
+  color: #7e7e82;
+  margin-bottom: 4px; }
 
 .card-prices__text--black {
   font-family: "TTLakes-Regular", sans-serif;
@@ -1420,22 +1398,22 @@ li {
   font-family: "TTLakes-Bold";
   src: url(./fonts/TTLakes-Bold.woff2); }
 
-.comm {
+.commercial {
   font-family: "TTLakes-Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
   max-width: 480px; }
 
-.comm__text {
+.commercial__text {
   margin: 5px 25px 15px 16px; }
   @media (min-width: 768px) {
-    .comm__text {
+    .commercial__text {
       margin-left: 24px; } }
   @media (min-width: 1366px) {
-    .comm__text {
+    .commercial__text {
       margin-left: 35px; } }
 
-.comm-make-order {
+.commercial-make-order {
   display: block;
   margin: 0 30px 15px 16px;
   font-family: "TTLakes-Regular", sans-serif;
@@ -1446,13 +1424,13 @@ li {
   line-height: 24px;
   margin-left: 16px; }
   @media (min-width: 768px) {
-    .comm-make-order {
+    .commercial-make-order {
       margin-left: 24px; } }
   @media (min-width: 1366px) {
-    .comm-make-order {
+    .commercial-make-order {
       margin-left: 35px; } }
 
-.comm-make-order__btn {
+.commercial-make-order__btn {
   vertical-align: top; }
 
 @font-face {
@@ -1505,7 +1483,7 @@ body {
   background-color: #f8f8f8; }
 
 .page-wrapper {
-  overflow-x: hidden;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden; }
@@ -1523,13 +1501,12 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1; }
-
-.blur--true {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  height: 100%;
-  width: 100%;
-  z-index: 2; }
+  .blur--true {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    z-index: 2; }
 
 .click {
   cursor: pointer; }
