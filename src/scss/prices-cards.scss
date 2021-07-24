@@ -1,0 +1,53 @@
+@import "vars.scss";
+
+.cards-container-prices {
+  padding: 16px;
+  width: 100vw;
+  min-height: 260px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.card-prices {
+  width: 260px;
+  height: 200px;
+  border: $bordercolor_1 solid 1px;
+  border-radius: 6px;
+  background-color: $bgColor_2;
+  list-style: none;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.card-prices__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card-prices__text-wrapper-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-prices__text {
+  font-family: $LakesRegular;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color_2;
+  margin-bottom: 4px;
+}
+.card-prices__text--black {
+  font-family: $LakesRegular;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color_1;
+}
+
+.card-prices__img {
+  align-self: flex-end;
+}

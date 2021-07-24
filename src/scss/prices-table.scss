@@ -1,0 +1,49 @@
+@import "vars.scss";
+.table-prices {
+  display: none;
+  max-width: 970px;
+  margin: 31px 24px;
+  font-family: $LakesRegular;
+  font-size: 14px;
+  line-height: 18px;
+  border-collapse: collapse;
+  text-align: left;
+  color: $color_1;
+  @media (min-width: 768px) {
+    display: table;
+  }
+  @media (min-width: 1366px) {
+    max-width: 1100px;
+  }
+}
+.table-prices__head {
+  background-color: transparent;
+  color: $color_2;
+  font-weight: normal;
+  line-height: 16px;
+}
+.table-prices__body {
+  background-color: $bgColor_2;
+  border-radius: 6px;
+}
+.table-prices__head-data {
+  padding-top: 31px;
+  padding-bottom: 16px;
+}
+.table-prices__data {
+  padding: 23px 0;
+  border-bottom: $bordercolor_1 1px solid;
+  border-width: 90%;
+}
+.col-4 {
+  text-align: right;
+}
+.col-none {
+  width: 16px;
+  @media (min-width: 1366px) {
+    width: 24px;
+  }
+}
+.row-bottom {
+  border-bottom: none;
+}
